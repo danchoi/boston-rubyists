@@ -29,8 +29,8 @@ class GitStream
       puts programmer.chomp!
       cmd  = "curl -sL 'https://github.com/#{programmer}.atom'"
       atom_xml = `#{cmd}`
-      count = update_atom atom_xml
-      puts "#{count} new items"
+      new = update_atom atom_xml
+      puts "#{new.size} new items"
     }
   end
     
