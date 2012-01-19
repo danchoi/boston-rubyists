@@ -1,0 +1,919 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/danchoi</id>
+  <link type="text/html" rel="alternate" href="https://github.com/danchoi"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/danchoi.atom"/>
+  <title>danchoi's Activity</title>
+  <updated>2012-01-19T18:57:35Z</updated>
+  <entry>
+    <id>tag:github.com,2008:PushEvent/1512846884</id>
+    <published>2012-01-19T18:57:35Z</published>
+    <updated>2012-01-19T18:57:35Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/danchoi/dotfiles/compare/e28bdcf21b...30ab4ad8f1"/>
+    <title type="html">danchoi pushed to master at danchoi/dotfiles</title>
+    <author>
+      <name>danchoi</name>
+      <uri>https://github.com/danchoi</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/004e78a7e0aaf9f1eb0009668cd84b1a?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+    <content type="html">&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/danchoi&quot;&gt;danchoi&lt;/a&gt; &lt;span&gt;pushed&lt;/span&gt; to master at &lt;a href=&quot;/danchoi/dotfiles&quot;&gt;danchoi/dotfiles&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-01-19T18:57:35Z&quot; title=&quot;2012-01-19 18:57:35&quot;&gt;January 19, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+
+  &lt;div class=&quot;commits&quot;&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+      &lt;a href=&quot;/danchoi&quot; class=&quot;committer&quot;&gt;danchoi&lt;/a&gt; committed &lt;a href=&quot;/danchoi/dotfiles/commit/30ab4ad8f1cd38dfc82904a86f50696f13b99101&quot;&gt;30ab4ad&lt;/a&gt;
+
+        &lt;div class=&quot;message&quot;&gt;
+          &lt;blockquote&gt;vimrc Q mapped&lt;/blockquote&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:CreateEvent/1512837623</id>
+    <published>2012-01-19T18:24:22Z</published>
+    <updated>2012-01-19T18:24:22Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/danchoi/gitstream"/>
+    <title type="html">danchoi created repository gitstream</title>
+    <author>
+      <name>danchoi</name>
+      <uri>https://github.com/danchoi</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/004e78a7e0aaf9f1eb0009668cd84b1a?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+    <content type="html">&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/danchoi&quot;&gt;danchoi&lt;/a&gt; &lt;span&gt;created&lt;/span&gt; repository &lt;a href=&quot;/danchoi/gitstream&quot;&gt;gitstream&lt;/a&gt; 
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-01-19T18:24:22Z&quot; title=&quot;2012-01-19 18:24:22&quot;&gt;January 19, 2012&lt;/time&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;
+
+        tba
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:PushEvent/1512801414</id>
+    <published>2012-01-19T16:15:15Z</published>
+    <updated>2012-01-19T16:15:15Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/danchoi/kindlerb/compare/5baf9aa656...6ebfc5027c"/>
+    <title type="html">danchoi pushed to master at danchoi/kindlerb</title>
+    <author>
+      <name>danchoi</name>
+      <uri>https://github.com/danchoi</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/004e78a7e0aaf9f1eb0009668cd84b1a?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+    <content type="html">&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/danchoi&quot;&gt;danchoi&lt;/a&gt; &lt;span&gt;pushed&lt;/span&gt; to master at &lt;a href=&quot;/danchoi/kindlerb&quot;&gt;danchoi/kindlerb&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-01-19T16:15:15Z&quot; title=&quot;2012-01-19 16:15:15&quot;&gt;January 19, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+
+  &lt;div class=&quot;commits&quot;&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+      &lt;a href=&quot;/danchoi&quot; class=&quot;committer&quot;&gt;danchoi&lt;/a&gt; committed &lt;a href=&quot;/danchoi/kindlerb/commit/6ebfc5027cf47ef4d228f1457beac9e5dda560a2&quot;&gt;6ebfc50&lt;/a&gt;
+
+        &lt;div class=&quot;message&quot;&gt;
+          &lt;blockquote&gt;readme edits&lt;/blockquote&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:PushEvent/1512602146</id>
+    <published>2012-01-18T22:59:26Z</published>
+    <updated>2012-01-18T22:59:26Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/danchoi/rails31nav.vim/compare/b4fedad307...de4402ebf0"/>
+    <title type="html">danchoi pushed to master at danchoi/rails31nav.vim</title>
+    <author>
+      <name>danchoi</name>
+      <uri>https://github.com/danchoi</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/004e78a7e0aaf9f1eb0009668cd84b1a?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+    <content type="html">&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/danchoi&quot;&gt;danchoi&lt;/a&gt; &lt;span&gt;pushed&lt;/span&gt; to master at &lt;a href=&quot;/danchoi/rails31nav.vim&quot;&gt;danchoi/rails31nav.vim&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-01-18T22:59:26Z&quot; title=&quot;2012-01-18 22:59:26&quot;&gt;January 18, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+
+  &lt;div class=&quot;commits&quot;&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+      &lt;a href=&quot;/danchoi&quot; class=&quot;committer&quot;&gt;danchoi&lt;/a&gt; committed &lt;a href=&quot;/danchoi/rails31nav.vim/commit/de4402ebf048f48ca7e25b5c371f3d401a08d603&quot;&gt;de4402e&lt;/a&gt;
+
+        &lt;div class=&quot;message&quot;&gt;
+          &lt;blockquote&gt;cleaner&lt;/blockquote&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:PushEvent/1512601932</id>
+    <published>2012-01-18T22:58:41Z</published>
+    <updated>2012-01-18T22:58:41Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/danchoi/rails31nav.vim/compare/39607f3258...b4fedad307"/>
+    <title type="html">danchoi pushed to master at danchoi/rails31nav.vim</title>
+    <author>
+      <name>danchoi</name>
+      <uri>https://github.com/danchoi</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/004e78a7e0aaf9f1eb0009668cd84b1a?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+    <content type="html">&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/danchoi&quot;&gt;danchoi&lt;/a&gt; &lt;span&gt;pushed&lt;/span&gt; to master at &lt;a href=&quot;/danchoi/rails31nav.vim&quot;&gt;danchoi/rails31nav.vim&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-01-18T22:58:41Z&quot; title=&quot;2012-01-18 22:58:41&quot;&gt;January 18, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+
+  &lt;div class=&quot;commits&quot;&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+      &lt;a href=&quot;/danchoi&quot; class=&quot;committer&quot;&gt;danchoi&lt;/a&gt; committed &lt;a href=&quot;/danchoi/rails31nav.vim/commit/b4fedad30768b446ff9043816b20fb8883312c72&quot;&gt;b4fedad&lt;/a&gt;
+
+        &lt;div class=&quot;message&quot;&gt;
+          &lt;blockquote&gt;typo&lt;/blockquote&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:PushEvent/1512587276</id>
+    <published>2012-01-18T22:06:27Z</published>
+    <updated>2012-01-18T22:06:27Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/danchoi/rails/compare/39d132e8ad...73c9861214"/>
+    <title type="html">danchoi pushed to master at danchoi/rails</title>
+    <author>
+      <name>danchoi</name>
+      <uri>https://github.com/danchoi</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/004e78a7e0aaf9f1eb0009668cd84b1a?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+    <content type="html">&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/danchoi&quot;&gt;danchoi&lt;/a&gt; &lt;span&gt;pushed&lt;/span&gt; to master at &lt;a href=&quot;/danchoi/rails&quot;&gt;danchoi/rails&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-01-18T22:06:27Z&quot; title=&quot;2012-01-18 22:06:27&quot;&gt;January 18, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+
+  &lt;div class=&quot;commits&quot;&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+      &lt;a href=&quot;/danchoi&quot; class=&quot;committer&quot;&gt;danchoi&lt;/a&gt; committed &lt;a href=&quot;/danchoi/rails/commit/73c986121400f926ee654233c6fce162cadcf844&quot;&gt;73c9861&lt;/a&gt;
+
+        &lt;div class=&quot;message&quot;&gt;
+          &lt;blockquote&gt;clear sections/ before regenerating&lt;/blockquote&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:PushEvent/1512585871</id>
+    <published>2012-01-18T22:01:56Z</published>
+    <updated>2012-01-18T22:01:56Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/danchoi/docrails_kindle/compare/35f8d462d7...6eb4606ae4"/>
+    <title type="html">danchoi pushed to master at danchoi/docrails_kindle</title>
+    <author>
+      <name>danchoi</name>
+      <uri>https://github.com/danchoi</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/004e78a7e0aaf9f1eb0009668cd84b1a?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+    <content type="html">&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/danchoi&quot;&gt;danchoi&lt;/a&gt; &lt;span&gt;pushed&lt;/span&gt; to master at &lt;a href=&quot;/danchoi/docrails_kindle&quot;&gt;danchoi/docrails_kindle&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-01-18T22:01:56Z&quot; title=&quot;2012-01-18 22:01:56&quot;&gt;January 18, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+
+  &lt;div class=&quot;commits&quot;&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+      &lt;a href=&quot;/danchoi&quot; class=&quot;committer&quot;&gt;danchoi&lt;/a&gt; committed &lt;a href=&quot;/danchoi/docrails_kindle/commit/6eb4606ae43268dd05b62f7b36343938847009ea&quot;&gt;6eb4606&lt;/a&gt;
+
+        &lt;div class=&quot;message&quot;&gt;
+          &lt;blockquote&gt;fix instructions&lt;/blockquote&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:PushEvent/1512583300</id>
+    <published>2012-01-18T21:53:28Z</published>
+    <updated>2012-01-18T21:53:28Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/danchoi/rails/compare/83165e1a6a...39d132e8ad"/>
+    <title type="html">danchoi pushed to master at danchoi/rails</title>
+    <author>
+      <name>danchoi</name>
+      <uri>https://github.com/danchoi</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/004e78a7e0aaf9f1eb0009668cd84b1a?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+    <content type="html">&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/danchoi&quot;&gt;danchoi&lt;/a&gt; &lt;span&gt;pushed&lt;/span&gt; to master at &lt;a href=&quot;/danchoi/rails&quot;&gt;danchoi/rails&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-01-18T21:53:28Z&quot; title=&quot;2012-01-18 21:53:28&quot;&gt;January 18, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+
+  &lt;div class=&quot;commits&quot;&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+      &lt;a href=&quot;/danchoi&quot; class=&quot;committer&quot;&gt;danchoi&lt;/a&gt; committed &lt;a href=&quot;/danchoi/rails/commit/39d132e8ad2d7c49742c4ce70f2697ed8ca94e00&quot;&gt;39d132e&lt;/a&gt;
+
+        &lt;div class=&quot;message&quot;&gt;
+          &lt;blockquote&gt;fix frontmatter generation&lt;/blockquote&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:PushEvent/1512582486</id>
+    <published>2012-01-18T21:50:28Z</published>
+    <updated>2012-01-18T21:50:28Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/danchoi/docrails_kindle/compare/0ccd2149d2...35f8d462d7"/>
+    <title type="html">danchoi pushed to master at danchoi/docrails_kindle</title>
+    <author>
+      <name>danchoi</name>
+      <uri>https://github.com/danchoi</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/004e78a7e0aaf9f1eb0009668cd84b1a?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+    <content type="html">&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/danchoi&quot;&gt;danchoi&lt;/a&gt; &lt;span&gt;pushed&lt;/span&gt; to master at &lt;a href=&quot;/danchoi/docrails_kindle&quot;&gt;danchoi/docrails_kindle&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-01-18T21:50:28Z&quot; title=&quot;2012-01-18 21:50:28&quot;&gt;January 18, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+
+  &lt;div class=&quot;commits&quot;&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+      &lt;a href=&quot;/danchoi&quot; class=&quot;committer&quot;&gt;danchoi&lt;/a&gt; committed &lt;a href=&quot;/danchoi/docrails_kindle/commit/35f8d462d795027fa03cb36e24f19fc649a32b03&quot;&gt;35f8d46&lt;/a&gt;
+
+        &lt;div class=&quot;message&quot;&gt;
+          &lt;blockquote&gt;update mobi download&lt;/blockquote&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:PushEvent/1512582056</id>
+    <published>2012-01-18T21:49:01Z</published>
+    <updated>2012-01-18T21:49:01Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/danchoi/docrails_kindle/compare/b852c9a679...0ccd2149d2"/>
+    <title type="html">danchoi pushed to master at danchoi/docrails_kindle</title>
+    <author>
+      <name>danchoi</name>
+      <uri>https://github.com/danchoi</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/004e78a7e0aaf9f1eb0009668cd84b1a?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+    <content type="html">&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/danchoi&quot;&gt;danchoi&lt;/a&gt; &lt;span&gt;pushed&lt;/span&gt; to master at &lt;a href=&quot;/danchoi/docrails_kindle&quot;&gt;danchoi/docrails_kindle&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-01-18T21:49:01Z&quot; title=&quot;2012-01-18 21:49:01&quot;&gt;January 18, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+
+  &lt;div class=&quot;commits&quot;&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+      &lt;a href=&quot;/danchoi&quot; class=&quot;committer&quot;&gt;danchoi&lt;/a&gt; committed &lt;a href=&quot;/danchoi/docrails_kindle/commit/0ccd2149d249f7dd0ee047bb357272546327feee&quot;&gt;0ccd214&lt;/a&gt;
+
+        &lt;div class=&quot;message&quot;&gt;
+          &lt;blockquote&gt;Merge branch &amp;#39;master&amp;#39; of github.com:danchoi/docrails_kindle&lt;/blockquote&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;a href=&quot;/danchoi&quot; class=&quot;committer&quot;&gt;danchoi&lt;/a&gt; committed &lt;a href=&quot;/danchoi/docrails_kindle/commit/64f08399664d3406b74b65cfcf115167be163bfb&quot;&gt;64f0839&lt;/a&gt;
+
+        &lt;div class=&quot;message&quot;&gt;
+          &lt;blockquote&gt;fix the construction of frontmatter section&lt;/blockquote&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;more&quot;&gt;&lt;a href=&quot;/danchoi/docrails_kindle/compare/b852c9a679...0ccd2149d2&quot;&gt;View comparison for these 2 commits &amp;raquo;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:PushEvent/1512566321</id>
+    <published>2012-01-18T20:53:27Z</published>
+    <updated>2012-01-18T20:53:27Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/danchoi/docrails_kindle/compare/aef531ea16...b852c9a679"/>
+    <title type="html">danchoi pushed to master at danchoi/docrails_kindle</title>
+    <author>
+      <name>danchoi</name>
+      <uri>https://github.com/danchoi</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/004e78a7e0aaf9f1eb0009668cd84b1a?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+    <content type="html">&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/danchoi&quot;&gt;danchoi&lt;/a&gt; &lt;span&gt;pushed&lt;/span&gt; to master at &lt;a href=&quot;/danchoi/docrails_kindle&quot;&gt;danchoi/docrails_kindle&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-01-18T20:53:27Z&quot; title=&quot;2012-01-18 20:53:27&quot;&gt;January 18, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+
+  &lt;div class=&quot;commits&quot;&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+      &lt;a href=&quot;/danchoi&quot; class=&quot;committer&quot;&gt;danchoi&lt;/a&gt; committed &lt;a href=&quot;/danchoi/docrails_kindle/commit/b852c9a679c800ad5ec8766b7a367ee2ae0f8c89&quot;&gt;b852c9a&lt;/a&gt;
+
+        &lt;div class=&quot;message&quot;&gt;
+          &lt;blockquote&gt;pull request linked&lt;/blockquote&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:IssueCommentEvent/1512539768</id>
+    <published>2012-01-18T19:15:30Z</published>
+    <updated>2012-01-18T19:15:30Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/lifo/docrails/pull/77#issuecomment-3551472"/>
+    <title type="html">danchoi commented on pull request 77 on lifo/docrails</title>
+    <author>
+      <name>danchoi</name>
+      <uri>https://github.com/danchoi</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/004e78a7e0aaf9f1eb0009668cd84b1a?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+    <content type="html">&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/danchoi&quot;&gt;danchoi&lt;/a&gt;
+  &lt;span&gt;commented&lt;/span&gt; on
+  &lt;a href=&quot;/lifo/docrails/pull/77#issuecomment-3551472&quot;&gt;pull request 77&lt;/a&gt; on &lt;a href=&quot;/lifo/docrails&quot;&gt;lifo/docrails&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-01-18T19:15:30Z&quot; title=&quot;2012-01-18 19:15:30&quot;&gt;January 18, 2012&lt;/time&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;
+    &lt;blockquote title=&quot;Done&quot;&gt;
+      &lt;p&gt;Done&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:PullRequestEvent/1512534955</id>
+    <published>2012-01-18T18:59:02Z</published>
+    <updated>2012-01-18T18:59:02Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/rails/rails/pull/4526"/>
+    <title type="html">danchoi opened pull request 4526 on rails/rails</title>
+    <author>
+      <name>danchoi</name>
+      <uri>https://github.com/danchoi</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/004e78a7e0aaf9f1eb0009668cd84b1a?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+    <content type="html">&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/danchoi&quot;&gt;danchoi&lt;/a&gt; &lt;span&gt;opened&lt;/span&gt; &lt;a href=&quot;/rails/rails/pull/4526&quot;&gt;pull request 4526&lt;/a&gt; on &lt;a href=&quot;/rails/rails&quot;&gt;rails/rails&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-01-18T18:59:02Z&quot; title=&quot;2012-01-18 18:59:02&quot;&gt;January 18, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;
+    &lt;blockquote&gt;Kindle ebook generation with working section navigation&lt;/blockquote&gt;
+    1 commit with 
+    132 additions and 
+    3 deletions
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:PushEvent/1512534633</id>
+    <published>2012-01-18T18:57:57Z</published>
+    <updated>2012-01-18T18:57:57Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/danchoi/rails/compare/660cc40644...83165e1a6a"/>
+    <title type="html">danchoi pushed to master at danchoi/rails</title>
+    <author>
+      <name>danchoi</name>
+      <uri>https://github.com/danchoi</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/004e78a7e0aaf9f1eb0009668cd84b1a?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+    <content type="html">&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/danchoi&quot;&gt;danchoi&lt;/a&gt; &lt;span&gt;pushed&lt;/span&gt; to master at &lt;a href=&quot;/danchoi/rails&quot;&gt;danchoi/rails&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-01-18T18:57:57Z&quot; title=&quot;2012-01-18 18:57:57&quot;&gt;January 18, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+
+  &lt;div class=&quot;commits&quot;&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+      &lt;a href=&quot;/danchoi&quot; class=&quot;committer&quot;&gt;danchoi&lt;/a&gt; committed &lt;a href=&quot;/danchoi/rails/commit/83165e1a6acb90bad17dfeb3bff1dd69cca5a4b3&quot;&gt;83165e1&lt;/a&gt;
+
+        &lt;div class=&quot;message&quot;&gt;
+          &lt;blockquote&gt;Generate Kindle ebook with working section navigation&lt;br&gt;
+&lt;br&gt;
+NOTE: this commit introduces a dependency on nokogiri and kindlerb, but I don&amp;#39;t&lt;br&gt;
+know the proper place outside this commit (which Gemfile or whatnot) to declare&lt;br&gt;
+this.&lt;/blockquote&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:ForkEvent/1512533085</id>
+    <published>2012-01-18T18:52:17Z</published>
+    <updated>2012-01-18T18:52:17Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/danchoi"/>
+    <title type="html">danchoi forked rails/rails</title>
+    <author>
+      <name>danchoi</name>
+      <uri>https://github.com/danchoi</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/004e78a7e0aaf9f1eb0009668cd84b1a?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+    <content type="html">&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/danchoi&quot;&gt;danchoi&lt;/a&gt; &lt;span&gt;forked&lt;/span&gt; &lt;a href=&quot;/rails/rails&quot;&gt;rails/rails&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-01-18T18:52:17Z&quot; title=&quot;2012-01-18 18:52:17&quot;&gt;January 18, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;
+    Forked repository is at &lt;a href=&quot;https://github.com/danchoi/rails&quot;&gt;danchoi/rails&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:PullRequestEvent/1512531849</id>
+    <published>2012-01-18T18:47:47Z</published>
+    <updated>2012-01-18T18:47:47Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/lifo/docrails/pull/77"/>
+    <title type="html">danchoi opened pull request 77 on lifo/docrails</title>
+    <author>
+      <name>danchoi</name>
+      <uri>https://github.com/danchoi</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/004e78a7e0aaf9f1eb0009668cd84b1a?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+    <content type="html">&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/danchoi&quot;&gt;danchoi&lt;/a&gt; &lt;span&gt;opened&lt;/span&gt; &lt;a href=&quot;/lifo/docrails/pull/77&quot;&gt;pull request 77&lt;/a&gt; on &lt;a href=&quot;/lifo/docrails&quot;&gt;lifo/docrails&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-01-18T18:47:47Z&quot; title=&quot;2012-01-18 18:47:47&quot;&gt;January 18, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;
+    &lt;blockquote&gt;Kindle ebook generation with working section navigation&lt;/blockquote&gt;
+    1 commit with 
+    132 additions and 
+    3 deletions
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:PushEvent/1512530365</id>
+    <published>2012-01-18T18:42:23Z</published>
+    <updated>2012-01-18T18:42:23Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/danchoi/docrails/compare/16c5f488f1...6f195a8899"/>
+    <title type="html">danchoi pushed to master at danchoi/docrails</title>
+    <author>
+      <name>danchoi</name>
+      <uri>https://github.com/danchoi</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/004e78a7e0aaf9f1eb0009668cd84b1a?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+    <content type="html">&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/danchoi&quot;&gt;danchoi&lt;/a&gt; &lt;span&gt;pushed&lt;/span&gt; to master at &lt;a href=&quot;/danchoi/docrails&quot;&gt;danchoi/docrails&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-01-18T18:42:23Z&quot; title=&quot;2012-01-18 18:42:23&quot;&gt;January 18, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+
+  &lt;div class=&quot;commits&quot;&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+      &lt;a href=&quot;/danchoi&quot; class=&quot;committer&quot;&gt;danchoi&lt;/a&gt; committed &lt;a href=&quot;/danchoi/docrails/commit/6f195a88997876486c0b3f7e2e551034c6a5db00&quot;&gt;6f195a8&lt;/a&gt;
+
+        &lt;div class=&quot;message&quot;&gt;
+          &lt;blockquote&gt;Generate Kindle ebook with working section navigation&lt;/blockquote&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:DownloadEvent/1512519017</id>
+    <published>2012-01-18T17:59:34Z</published>
+    <updated>2012-01-18T17:59:34Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/danchoi"/>
+    <title type="html">danchoi uploaded a file to danchoi/docrails_kindle</title>
+    <author>
+      <name>danchoi</name>
+      <uri>https://github.com/danchoi</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/004e78a7e0aaf9f1eb0009668cd84b1a?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+    <content type="html">&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/danchoi&quot;&gt;danchoi&lt;/a&gt; &lt;span&gt;uploaded&lt;/span&gt; a file to &lt;a href=&quot;/danchoi/docrails_kindle&quot;&gt;danchoi/docrails_kindle&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-01-18T17:59:34Z&quot; title=&quot;2012-01-18 17:59:34&quot;&gt;January 18, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;
+    &amp;quot;rails-guide.2012-01-18.mobi&amp;quot; is at (deleted)
+    
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:PushEvent/1512518403</id>
+    <published>2012-01-18T17:57:21Z</published>
+    <updated>2012-01-18T17:57:21Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/danchoi/docrails_kindle/compare/b9db100b7e...aef531ea16"/>
+    <title type="html">danchoi pushed to master at danchoi/docrails_kindle</title>
+    <author>
+      <name>danchoi</name>
+      <uri>https://github.com/danchoi</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/004e78a7e0aaf9f1eb0009668cd84b1a?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+    <content type="html">&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/danchoi&quot;&gt;danchoi&lt;/a&gt; &lt;span&gt;pushed&lt;/span&gt; to master at &lt;a href=&quot;/danchoi/docrails_kindle&quot;&gt;danchoi/docrails_kindle&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-01-18T17:57:21Z&quot; title=&quot;2012-01-18 17:57:21&quot;&gt;January 18, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+
+  &lt;div class=&quot;commits&quot;&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+      &lt;a href=&quot;/danchoi&quot; class=&quot;committer&quot;&gt;danchoi&lt;/a&gt; committed &lt;a href=&quot;/danchoi/docrails_kindle/commit/aef531ea1628e0785b49a9486aa87924a4c73fcd&quot;&gt;aef531e&lt;/a&gt;
+
+        &lt;div class=&quot;message&quot;&gt;
+          &lt;blockquote&gt;Revert &amp;quot;download from github downloads&amp;quot;&lt;br&gt;
+&lt;br&gt;
+This reverts commit b9db100b7e31b6929b6896660731cb88abaa59ec.&lt;/blockquote&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:PushEvent/1512518160</id>
+    <published>2012-01-18T17:56:33Z</published>
+    <updated>2012-01-18T17:56:33Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/danchoi/docrails_kindle/compare/600dd1bb4f...b9db100b7e"/>
+    <title type="html">danchoi pushed to master at danchoi/docrails_kindle</title>
+    <author>
+      <name>danchoi</name>
+      <uri>https://github.com/danchoi</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/004e78a7e0aaf9f1eb0009668cd84b1a?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+    <content type="html">&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/danchoi&quot;&gt;danchoi&lt;/a&gt; &lt;span&gt;pushed&lt;/span&gt; to master at &lt;a href=&quot;/danchoi/docrails_kindle&quot;&gt;danchoi/docrails_kindle&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-01-18T17:56:33Z&quot; title=&quot;2012-01-18 17:56:33&quot;&gt;January 18, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+
+  &lt;div class=&quot;commits&quot;&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+      &lt;a href=&quot;/danchoi&quot; class=&quot;committer&quot;&gt;danchoi&lt;/a&gt; committed &lt;a href=&quot;/danchoi/docrails_kindle/commit/b9db100b7e31b6929b6896660731cb88abaa59ec&quot;&gt;b9db100&lt;/a&gt;
+
+        &lt;div class=&quot;message&quot;&gt;
+          &lt;blockquote&gt;download from github downloads&lt;/blockquote&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:DownloadEvent/1512517813</id>
+    <published>2012-01-18T17:55:19Z</published>
+    <updated>2012-01-18T17:55:19Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/danchoi"/>
+    <title type="html">danchoi uploaded a file to danchoi/docrails_kindle</title>
+    <author>
+      <name>danchoi</name>
+      <uri>https://github.com/danchoi</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/004e78a7e0aaf9f1eb0009668cd84b1a?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+    <content type="html">&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/danchoi&quot;&gt;danchoi&lt;/a&gt; &lt;span&gt;uploaded&lt;/span&gt; a file to &lt;a href=&quot;/danchoi/docrails_kindle&quot;&gt;danchoi/docrails_kindle&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-01-18T17:55:19Z&quot; title=&quot;2012-01-18 17:55:19&quot;&gt;January 18, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;
+    &amp;quot;rails-guide.2012-01-18.mobi&amp;quot; is at (deleted)
+    
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:PushEvent/1512516163</id>
+    <published>2012-01-18T17:49:23Z</published>
+    <updated>2012-01-18T17:49:23Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/danchoi/docrails_kindle/compare/a52e63d9af...600dd1bb4f"/>
+    <title type="html">danchoi pushed to master at danchoi/docrails_kindle</title>
+    <author>
+      <name>danchoi</name>
+      <uri>https://github.com/danchoi</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/004e78a7e0aaf9f1eb0009668cd84b1a?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+    <content type="html">&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/danchoi&quot;&gt;danchoi&lt;/a&gt; &lt;span&gt;pushed&lt;/span&gt; to master at &lt;a href=&quot;/danchoi/docrails_kindle&quot;&gt;danchoi/docrails_kindle&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-01-18T17:49:23Z&quot; title=&quot;2012-01-18 17:49:23&quot;&gt;January 18, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+
+  &lt;div class=&quot;commits&quot;&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+      &lt;a href=&quot;/danchoi&quot; class=&quot;committer&quot;&gt;danchoi&lt;/a&gt; committed &lt;a href=&quot;/danchoi/docrails_kindle/commit/600dd1bb4f1df42213593ff57afb02bd1a3e6019&quot;&gt;600dd1b&lt;/a&gt;
+
+        &lt;div class=&quot;message&quot;&gt;
+          &lt;blockquote&gt;mention kindlerb gem&lt;/blockquote&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:PushEvent/1512514769</id>
+    <published>2012-01-18T17:44:23Z</published>
+    <updated>2012-01-18T17:44:23Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/danchoi/docrails_kindle/compare/7a78cfe3fe...a52e63d9af"/>
+    <title type="html">danchoi pushed to master at danchoi/docrails_kindle</title>
+    <author>
+      <name>danchoi</name>
+      <uri>https://github.com/danchoi</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/004e78a7e0aaf9f1eb0009668cd84b1a?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+    <content type="html">&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/danchoi&quot;&gt;danchoi&lt;/a&gt; &lt;span&gt;pushed&lt;/span&gt; to master at &lt;a href=&quot;/danchoi/docrails_kindle&quot;&gt;danchoi/docrails_kindle&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-01-18T17:44:23Z&quot; title=&quot;2012-01-18 17:44:23&quot;&gt;January 18, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+
+  &lt;div class=&quot;commits&quot;&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+      &lt;a href=&quot;/danchoi&quot; class=&quot;committer&quot;&gt;danchoi&lt;/a&gt; committed &lt;a href=&quot;/danchoi/docrails_kindle/commit/a52e63d9af4f7728a0c3fa6702f3ef2387efad39&quot;&gt;a52e63d&lt;/a&gt;
+
+        &lt;div class=&quot;message&quot;&gt;
+          &lt;blockquote&gt;edit&lt;/blockquote&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:PushEvent/1512512095</id>
+    <published>2012-01-18T17:34:44Z</published>
+    <updated>2012-01-18T17:34:44Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/danchoi/docrails_kindle/compare/bb938f85cd...7a78cfe3fe"/>
+    <title type="html">danchoi pushed to master at danchoi/docrails_kindle</title>
+    <author>
+      <name>danchoi</name>
+      <uri>https://github.com/danchoi</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/004e78a7e0aaf9f1eb0009668cd84b1a?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+    <content type="html">&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/danchoi&quot;&gt;danchoi&lt;/a&gt; &lt;span&gt;pushed&lt;/span&gt; to master at &lt;a href=&quot;/danchoi/docrails_kindle&quot;&gt;danchoi/docrails_kindle&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-01-18T17:34:44Z&quot; title=&quot;2012-01-18 17:34:44&quot;&gt;January 18, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+
+  &lt;div class=&quot;commits&quot;&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+      &lt;a href=&quot;/danchoi&quot; class=&quot;committer&quot;&gt;danchoi&lt;/a&gt; committed &lt;a href=&quot;/danchoi/docrails_kindle/commit/7a78cfe3fe5876ae14309e53ed2c38034f59ec5b&quot;&gt;7a78cfe&lt;/a&gt;
+
+        &lt;div class=&quot;message&quot;&gt;
+          &lt;blockquote&gt;2nd screenshot&lt;/blockquote&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:CreateEvent/1512508654</id>
+    <published>2012-01-18T17:22:55Z</published>
+    <updated>2012-01-18T17:22:55Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/danchoi/docrails_kindle/tree/v0.0.5"/>
+    <title type="html">danchoi created tag v0.0.5  at danchoi/docrails_kindle</title>
+    <author>
+      <name>danchoi</name>
+      <uri>https://github.com/danchoi</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/004e78a7e0aaf9f1eb0009668cd84b1a?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+    <content type="html">&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/danchoi&quot;&gt;danchoi&lt;/a&gt; &lt;span&gt;created&lt;/span&gt; tag &lt;a href=&quot;/danchoi/docrails_kindle/tree/v0.0.5&quot;&gt;v0.0.5&lt;/a&gt;  at &lt;a href=&quot;/danchoi/docrails_kindle&quot;&gt;danchoi/docrails_kindle&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-01-18T17:22:55Z&quot; title=&quot;2012-01-18 17:22:55&quot;&gt;January 18, 2012&lt;/time&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:PushEvent/1512508632</id>
+    <published>2012-01-18T17:22:50Z</published>
+    <updated>2012-01-18T17:22:50Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/danchoi/docrails_kindle/compare/698713e455...bb938f85cd"/>
+    <title type="html">danchoi pushed to master at danchoi/docrails_kindle</title>
+    <author>
+      <name>danchoi</name>
+      <uri>https://github.com/danchoi</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/004e78a7e0aaf9f1eb0009668cd84b1a?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+    <content type="html">&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/danchoi&quot;&gt;danchoi&lt;/a&gt; &lt;span&gt;pushed&lt;/span&gt; to master at &lt;a href=&quot;/danchoi/docrails_kindle&quot;&gt;danchoi/docrails_kindle&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-01-18T17:22:50Z&quot; title=&quot;2012-01-18 17:22:50&quot;&gt;January 18, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+
+  &lt;div class=&quot;commits&quot;&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+      &lt;a href=&quot;/danchoi&quot; class=&quot;committer&quot;&gt;danchoi&lt;/a&gt; committed &lt;a href=&quot;/danchoi/docrails_kindle/commit/bb938f85cd9e7bbd22aab859c60b9a08495332ec&quot;&gt;bb938f8&lt;/a&gt;
+
+        &lt;div class=&quot;message&quot;&gt;
+          &lt;blockquote&gt;bump&lt;/blockquote&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:PushEvent/1512508578</id>
+    <published>2012-01-18T17:22:38Z</published>
+    <updated>2012-01-18T17:22:38Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/danchoi/docrails_kindle/compare/1db423bbcc...698713e455"/>
+    <title type="html">danchoi pushed to master at danchoi/docrails_kindle</title>
+    <author>
+      <name>danchoi</name>
+      <uri>https://github.com/danchoi</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/004e78a7e0aaf9f1eb0009668cd84b1a?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+    <content type="html">&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/danchoi&quot;&gt;danchoi&lt;/a&gt; &lt;span&gt;pushed&lt;/span&gt; to master at &lt;a href=&quot;/danchoi/docrails_kindle&quot;&gt;danchoi/docrails_kindle&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-01-18T17:22:38Z&quot; title=&quot;2012-01-18 17:22:38&quot;&gt;January 18, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+
+  &lt;div class=&quot;commits&quot;&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+      &lt;a href=&quot;/danchoi&quot; class=&quot;committer&quot;&gt;danchoi&lt;/a&gt; committed &lt;a href=&quot;/danchoi/docrails_kindle/commit/698713e45581490d757de6af71c435d6c20ce0c5&quot;&gt;698713e&lt;/a&gt;
+
+        &lt;div class=&quot;message&quot;&gt;
+          &lt;blockquote&gt;new mobi file with css&lt;/blockquote&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;a href=&quot;/danchoi&quot; class=&quot;committer&quot;&gt;danchoi&lt;/a&gt; committed &lt;a href=&quot;/danchoi/docrails_kindle/commit/674ecf6349929d8acdbaec16feb592d997f08498&quot;&gt;674ecf6&lt;/a&gt;
+
+        &lt;div class=&quot;message&quot;&gt;
+          &lt;blockquote&gt;include css&lt;/blockquote&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;more&quot;&gt;&lt;a href=&quot;/danchoi/docrails_kindle/compare/1db423bbcc...698713e455&quot;&gt;View comparison for these 2 commits &amp;raquo;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:CreateEvent/1512501600</id>
+    <published>2012-01-18T16:59:34Z</published>
+    <updated>2012-01-18T16:59:34Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/danchoi/docrails_kindle/tree/v0.0.4"/>
+    <title type="html">danchoi created tag v0.0.4  at danchoi/docrails_kindle</title>
+    <author>
+      <name>danchoi</name>
+      <uri>https://github.com/danchoi</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/004e78a7e0aaf9f1eb0009668cd84b1a?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+    <content type="html">&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/danchoi&quot;&gt;danchoi&lt;/a&gt; &lt;span&gt;created&lt;/span&gt; tag &lt;a href=&quot;/danchoi/docrails_kindle/tree/v0.0.4&quot;&gt;v0.0.4&lt;/a&gt;  at &lt;a href=&quot;/danchoi/docrails_kindle&quot;&gt;danchoi/docrails_kindle&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-01-18T16:59:34Z&quot; title=&quot;2012-01-18 16:59:34&quot;&gt;January 18, 2012&lt;/time&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:PushEvent/1512501584</id>
+    <published>2012-01-18T16:59:30Z</published>
+    <updated>2012-01-18T16:59:30Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/danchoi/docrails_kindle/compare/c2f7ee082c...1db423bbcc"/>
+    <title type="html">danchoi pushed to master at danchoi/docrails_kindle</title>
+    <author>
+      <name>danchoi</name>
+      <uri>https://github.com/danchoi</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/004e78a7e0aaf9f1eb0009668cd84b1a?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+    <content type="html">&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/danchoi&quot;&gt;danchoi&lt;/a&gt; &lt;span&gt;pushed&lt;/span&gt; to master at &lt;a href=&quot;/danchoi/docrails_kindle&quot;&gt;danchoi/docrails_kindle&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-01-18T16:59:30Z&quot; title=&quot;2012-01-18 16:59:30&quot;&gt;January 18, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+
+  &lt;div class=&quot;commits&quot;&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+      &lt;a href=&quot;/danchoi&quot; class=&quot;committer&quot;&gt;danchoi&lt;/a&gt; committed &lt;a href=&quot;/danchoi/docrails_kindle/commit/1db423bbccbcee156f420ef3b9522cdcbd792df9&quot;&gt;1db423b&lt;/a&gt;
+
+        &lt;div class=&quot;message&quot;&gt;
+          &lt;blockquote&gt;fix gemspec description&lt;/blockquote&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:CreateEvent/1512500888</id>
+    <published>2012-01-18T16:57:06Z</published>
+    <updated>2012-01-18T16:57:06Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/danchoi/docrails_kindle/tree/v0.0.3"/>
+    <title type="html">danchoi created tag v0.0.3  at danchoi/docrails_kindle</title>
+    <author>
+      <name>danchoi</name>
+      <uri>https://github.com/danchoi</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/004e78a7e0aaf9f1eb0009668cd84b1a?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"/>
+    <content type="html">&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/danchoi&quot;&gt;danchoi&lt;/a&gt; &lt;span&gt;created&lt;/span&gt; tag &lt;a href=&quot;/danchoi/docrails_kindle/tree/v0.0.3&quot;&gt;v0.0.3&lt;/a&gt;  at &lt;a href=&quot;/danchoi/docrails_kindle&quot;&gt;danchoi/docrails_kindle&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-01-18T16:57:06Z&quot; title=&quot;2012-01-18 16:57:06&quot;&gt;January 18, 2012&lt;/time&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>
