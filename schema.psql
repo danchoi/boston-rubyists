@@ -1,1 +1,9 @@
-create table
+drop table if exists updates;
+create table updates (
+  update_id varchar primary key,
+  author varchar,
+  date timestamp,
+  title varchar,
+  content text,
+  media varchar 
+)
