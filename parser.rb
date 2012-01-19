@@ -13,8 +13,10 @@ d.search('entry').each {|e|
     content: e.at('content').inner_text,
     media: e.xpath('media:thumbnail',{'media'=>"http://search.yahoo.com/mrss/"}).first[:url]
   }
-  puts item[:title]
-  DB[:updates].insert item
+  unless DB[:updates].first update_id:item[:update_id]
+    puts item[:title]
+    DB[:updates].insert item
+  end
 }
 
 
