@@ -2,6 +2,7 @@ require 'nokogiri'
 require 'time'
 require 'sequel'
 require 'open-uri'
+require 'yaml'
 DB = Sequel.connect File.read('database.conf').strip
 
 class GitStream
