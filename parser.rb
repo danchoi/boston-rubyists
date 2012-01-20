@@ -17,7 +17,10 @@ class GitStream
         content: e.at('content').inner_text,
         media: e.xpath('media:thumbnail',{'media'=>"http://search.yahoo.com/mrss/"}).first[:url]
       }
-      unless DB[:updates].first update_id:item[:update_id]
+      if DB[:updates].first update_id:item[:update_id]
+        # we can break since the rest of the items will have been seen
+        next
+      else
         DB[:updates].insert item
         item[:title]
       end
@@ -26,11 +29,14 @@ class GitStream
 
   def update_list programmers
     programmers.select {|p| p =~ /\w+/}.each {|programmer|
-      puts programmer.chomp!
+      programmer.chomp!
+      print programmer
       cmd  = "curl -sL 'https://github.com/#{programmer}.atom'"
       atom_xml = `#{cmd}`
       new = update_atom atom_xml
-      puts "#{new.size} new items"
+      pred = new.size > 0 ? " -> #{new.size} new items" : ''
+      print pred
+      print "\n"
     }
   end
     
