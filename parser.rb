@@ -28,16 +28,20 @@ class GitStream
   end
 
   def update_list programmers
-    programmers.select {|p| p =~ /\w+/}.each {|programmer|
+    activity = programmers.select {|p| p =~ /\w+/}.inject([]) {|m, programmer|
       programmer.chomp!
       print programmer
       cmd  = "curl -sL 'https://github.com/#{programmer}.atom'"
       atom_xml = `#{cmd}`
       new = update_atom atom_xml
-      pred = new.size > 0 ? " -> #{new.size} new items" : ''
-      print pred
+      if new.size > 0 
+        print " -> #{new.size} new items" 
+        m << ({programmer:programmer, items:new.size})
+      end
       print "\n"
+      m
     }
+    puts activity.to_yaml
   end
     
 end
