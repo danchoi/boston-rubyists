@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      img { width: 30px; float:left; margin-right: 10px; }
+      .update { clear: left }
+    </style>
+  </head>
+  <body>
+    <h1>boston rubyists</h1>
+
+    <% @updates.each do |u| %>
+    <div class="update">
+<img src="<%=u.media%>"/>
+<%= u.content.gsub(/^/, ' ' * 6).gsub(/href="\//, 'href="https://github.com/') %>
+    </div><!-- update -->
+    <% end %>
+
+  
+  </body>
+</html>
+
