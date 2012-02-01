@@ -11,12 +11,28 @@
 
     <% @updates.each do |u| %>
     <div class="update">
-<img src="<%=u.media%>"/>
-<%= u.content.gsub(/^/, ' ' * 6).gsub(/href="\//, 'href="https://github.com/') %>
+<img src="<%=u[:media]%>"/>
+<%= u[:content].gsub(/^/, ' ' * 6).gsub(/href="\//, 'href="https://github.com/') %>
     </div><!-- update -->
     <% end %>
 
   
+    <script type="text/javascript" src="/underscore-min.js"></script>
+    <script type="text/javascript" src="/jquery-1.7.1.js "></script>
+    <script type="text/javascript" src="/backbone.js"></script>
+    <script type="text/javascript" src="/app.js"></script>
+  <script>
+    // Set up the "play" buttons for each runnable code example.
+    $(function() {
+      updates = new Updates();
+      updates.reset(<%= @updates.to_json %>);
+      console.log(updates);
+
+        
+     
+    });
+  </script>
   </body>
+
 </html>
 
