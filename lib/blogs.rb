@@ -17,13 +17,21 @@ feeds.each {|f|
   feedyml = `curl -Ls '#{f}' | feed2yaml`
   x = YAML::load feedyml
   x[:items].each { |i| 
+    html = i[:content][:html]
+    content = if html 
+      n = Nokogiri::HTML(html).at('p')
+      if n
+        words = n.inner_text[0,355].split(/\s/)
+        words[0..-2].join(' ') + '...' 
+      end
+    end
     e = { 
       blog: x[:meta][:title],
       href: i[:link],
       title: i[:title],
       author: i[:author],
       date: i[:pub_date],
-      summary: i[:content][:html]
+      summary: content
     }
     if DB[:blog_posts].first href: e[:href]
       $stderr.print '.'
