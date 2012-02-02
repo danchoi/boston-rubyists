@@ -11,6 +11,7 @@
 
     <div id="updates">
       <% @updates.each do |u| %>
+      <% next %>
       <div class="update">
   <img src="<%=u[:media]%>"/>
   <%= u[:content].gsub(/^/, ' ' * 6).gsub(/href="\//, 'href="https://github.com/') %>
@@ -27,7 +28,7 @@
     <script>
       // Set up the "play" buttons for each runnable code example.
       $(function() {
-        // Updates.reset(<%= @updates[0,3].to_json %>);
+        Updates.reset(<%= @updates[0,3].to_json %>);
       });
     </script>
 
@@ -38,6 +39,7 @@
       <div class="update">
         <div class="display">
           <img src="{{ media }}"/>
+          <span>{{ date }}</span>
           {{ content }}
         </div>
       </div>
