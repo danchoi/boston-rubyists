@@ -2,7 +2,7 @@
 
 The demo of this site can be seen [here][demo], unless it is down.
 
-[demo]:http://poddb:9292
+[demo]:http://poddb.com:9292
 
 ## Requires
 
