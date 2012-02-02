@@ -9,29 +9,40 @@
   <body>
     <h1>boston rubyists</h1>
 
-    <% @updates.each do |u| %>
-    <div class="update">
-<img src="<%=u[:media]%>"/>
-<%= u[:content].gsub(/^/, ' ' * 6).gsub(/href="\//, 'href="https://github.com/') %>
-    </div><!-- update -->
-    <% end %>
+    <div id="updates">
+      <% @updates.each do |u| %>
+      <div class="update">
+  <img src="<%=u[:media]%>"/>
+  <%= u[:content].gsub(/^/, ' ' * 6).gsub(/href="\//, 'href="https://github.com/') %>
+      </div><!-- update -->
+      <% end %>
+    </div>
 
   
-    <script type="text/javascript" src="/underscore-min.js"></script>
+    <script type="text/javascript" src="/underscore.js"></script>
     <script type="text/javascript" src="/jquery-1.7.1.js "></script>
     <script type="text/javascript" src="/backbone.js"></script>
     <script type="text/javascript" src="/app.js"></script>
-  <script>
-    // Set up the "play" buttons for each runnable code example.
-    $(function() {
-      updates = new Updates();
-      updates.reset(<%= @updates.to_json %>);
-      console.log(updates);
 
-        
-     
-    });
-  </script>
+    <script>
+      // Set up the "play" buttons for each runnable code example.
+      $(function() {
+        Updates.reset(<%= @updates.to_json %>);
+      });
+    </script>
+
+
+    <!-- Templates -->
+
+    <script type="text/template" id="update-template">
+      <div class="update">
+        <div class="display">
+          <img src="{{ media }}"/>
+          {{ content }}
+        </div>
+      </div>
+    </script>
+
   </body>
 
 </html>
