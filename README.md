@@ -6,11 +6,12 @@ tweets, and blogs of your local hacker community.
 It was created for [BostonRB][bostonrb] (Boston Ruby Group), but it's
 configurable, so you can deploy a version for your own hacker community.
 
-The tool is built with Backbone.js, so that page will update itself with new information as it gets inserted 
+The tool is built with [Backbone.js][backbone], so that page will update itself with new information as it gets inserted 
 into the database by background tasks. The background tasks are also provided.
 
 [planet]:http://en.wikipedia.org/wiki/Planet_%28software%29
 [bostonrb]:http://bostonrb.org/
+[backbone]:http://documentcloud.github.com/backbone/
 
 
 Screenshot:
