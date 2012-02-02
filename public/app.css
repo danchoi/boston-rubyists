@@ -27,10 +27,14 @@ img { width: 30px; float:left; margin-right: 10px; }
   padding-top: 0.4em;
   padding-bottom: 0px;
 }
+  .update img {
+    margin-top:5px;
+  }
 
 .blogpost { 
   border-top: 1px dotted #ECECEC;
   padding-bottom: 0.3em;
+  padding-top: 0.5em;
 }
 .tweet { 
   clear: left;
