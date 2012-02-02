@@ -72,4 +72,10 @@ some other tool.
 
 Please feel free to fork and enhance.
 
-If you want to use this for another hacker subculture, please do.
+If you want to use this for another set of hackers and bloggers, please do and
+please drop me a line to let me know you're using this tool!
+
+
+## Authors
+
+* Daniel Choi [https://github.com/danchoi][github]
