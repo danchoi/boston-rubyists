@@ -33,10 +33,13 @@
           </li>
           <% end %>
         </div>
-        <div class="span5">
+        <div class="span4">
           <div id="updates"> </div>
         </div>
-        <div class="span5">
+        <div class="span2">
+          <div id="tweets"> </div>
+        </div>
+        <div class="span4">
           <div id="blogposts"> </div>
         </div>
       </div>
@@ -53,10 +56,12 @@
       $(function() {
         Updates.reset(<%= @updates.to_json %>);
         BlogPosts.reset(<%= @blog_posts.to_json %>);
+        Tweets.reset(<%= @tweets.to_json %>);
 
         setInterval(function () {
           Updates.fetch({add: true});
           BlogPosts.fetch({add: true});
+          Tweets.fetch({add: true});
         }, <%= poll_interval %>);
       });
     </script>
@@ -81,6 +86,17 @@
       </div>
     </script>
 
+    <script type="text/template" id="tweet-template">
+      <div class="tweet">
+        <img src="{{user_profile_image_url}}"/>
+        <strong>{{ user_screen_name }}</strong>
+        <p>
+          {{ text }}
+          <br/>
+          <span class="tweet_date">{{ date_string }}</span>
+        </p>
+      </div>
+    </script>
 
   </body>
 

@@ -4,6 +4,7 @@ require 'json'
 require 'logger'
 require 'nokogiri'
 require 'yaml'
+require 'uri'
 
 CONFIG = YAML::load_file 'config.yml'
 DB = Sequel.connect CONFIG['database']
@@ -23,6 +24,11 @@ class BostonRubyists < Sinatra::Base
     end
 
     def prep_tweet t
+      new = t[:text].gsub(/http:[\S,\]\)\.\;]+/, '<a href="\0">\0</a>')
+      new = new.gsub(/@(\w+)/, '<a href="http://twitter.com/\1">@\1</a>')
+      t[:date_string] = t[:created_at].strftime("%b %d %I:%M %p")
+      t[:text] = new 
+      t
     end
 
     def page_title
@@ -48,15 +54,18 @@ class BostonRubyists < Sinatra::Base
 
   get('/updates') {
     ds = DB[:updates].order(:date.desc).filter("date > ?", params[:from_time])
-    puts "returning #{ds.count} results"
     @updates = ds.map {|u| prep u}
     @updates.to_json
   }
   get('/blog_posts') {
     ds = DB[:blog_posts].order(:date.desc).filter("date > ?", params[:from_time])
-    puts "returning #{ds.count} results"
     @blog_posts = ds.map {|p| prep p}
     @blog_posts.to_json
+  }
+  get('/tweets') {
+    ds = DB[:tweets].order(:created_at.desc).filter("created_at > ?", params[:from_time])
+    @tweets = ds.map {|p| prep_tweet p}
+    @tweets.to_json
   }
 
   run! if app_file == $0

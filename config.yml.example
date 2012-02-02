@@ -5,6 +5,7 @@ org:
   name: bostonrb.org
   href: http://bostonrb.org
 opml: http://www.blogbridge.com/rl/291/Boston+Ruby.opml
+twitters: https://github.com/bostonrb/bostonrb/wiki/All-Rubyists
 locations: 
 - cambridge+ma 
 - boston 

@@ -40,6 +40,26 @@ $(function() {
   });
 
 
+  window.Tweet = Backbone.Model.extend({ idAttribute: 'href' });
+  window.TweetsList = Backbone.Collection.extend({
+    url: function() {
+      return ('/tweets?from_time=' + this.models[this.models.length-1].get("created_at"));
+    },
+    model: Tweet,
+    comparator: function(x) { return x.get('created_at'); }
+  });
+  window.Tweets = new TweetsList();
+  window.TweetView = Backbone.View.extend({
+    tagName: "div",
+    classNme: "tweet",
+    template: _.template( $('#tweet-template').html() ),
+    render: function() {
+      $(this.el).html(this.template(this.model.toJSON()));
+      return this;
+    }
+  });
+
+
   window.AppView = Backbone.View.extend({
     initialize: function() {
       Updates.bind('add', this.addOneUpdate, this);
@@ -48,7 +68,11 @@ $(function() {
 
       BlogPosts.bind('add', this.addOneBlogPost, this);
       BlogPosts.bind('reset', this.addAllBlogPosts, this);
-      Updates.bind('refresh', this.addAllBlogPosts, this);
+      BlogPosts.bind('refresh', this.addAllBlogPosts, this);
+
+      Tweets.bind('add', this.addOneTweet, this);
+      Tweets.bind('reset', this.addAllTweets, this);
+      Tweets.bind('refresh', this.addAllTweets, this);
     },
     addOneUpdate: function(x) {
       var updateView = new UpdateView({model: x});
@@ -61,6 +85,12 @@ $(function() {
       $("#blogposts").prepend(blogpostView.render().el);
     },
     addAllBlogPosts: function() { BlogPosts.each(this.addOneBlogPost); },
+
+    addOneTweet: function(x) {
+      var tweetView = new TweetView({model: x});
+      $("#tweets").prepend(tweetView.render().el);
+    },
+    addAllTweets: function() { Tweets.each(this.addOneTweet); }
   });
 
   window.App = new AppView;

@@ -10,6 +10,8 @@
 img { width: 30px; float:left; margin-right: 10px; }
 .date {
   float: right;
+  font-size: smaller;
+  color: #CCC;
 }
 
 .update { 
@@ -25,6 +27,13 @@ img { width: 30px; float:left; margin-right: 10px; }
   padding-bottom: 0.7em;
 
 }
+.tweet { 
+  clear: left;
+  border-top: 1px dotted #ECECEC;
+  padding-top: 0.5em;
+  padding-bottom: 0.7em;
+}
+
 #bostonrblink {
   margin-top: 1em;
   float:right;
@@ -32,4 +41,13 @@ img { width: 30px; float:left; margin-right: 10px; }
 .location {
   color: #CCC;
   font-size: smaller;
+}
+.tweet_date {
+  color: #CCC;
+  font-style: italic;
+  font-size: smaller;
+}
+.tweet img {
+  float: left;
+  padding-top:5px;
 }

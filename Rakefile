@@ -20,4 +20,9 @@ task :hackers do
   require 'hackers'
   puts "Finished :hackers at #{Time.now}"
 end
+task :tweets do
+  puts "Started :tweets at #{Time.now}"
+  require 'tweets'
+  puts "Finished :tweets at #{Time.now}"
+end
 

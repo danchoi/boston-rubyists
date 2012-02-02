@@ -25,4 +25,18 @@ create table blog_posts (
   date timestamp,
   summary text
 );
+
 create index blog_posts_date_idx on updates (date);
+
+create table tweets (
+  id bigint primary key,
+  created_at timestamp,
+  user_screen_name varchar,
+  user_profile_image_url varchar,
+  user_description varchar,
+  user_location varchar,
+  user_followers_count integer,
+  text varchar,
+  retweet_count integer default 0
+);
+create index tweets_created_at_idx on tweets (created_at);
