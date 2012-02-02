@@ -57,6 +57,5 @@ def update_list hackers
   # puts activity.to_yaml
 end
   
-
 hackers = DB[:hackers].all.map {|x| x[:name]}
 update_list hackers

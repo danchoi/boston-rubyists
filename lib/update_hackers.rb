@@ -6,6 +6,7 @@
 require 'nokogiri'
 require 'csv'
 require 'sequel'
+require 'yaml'
 DB = Sequel.connect File.read('database.conf').strip
 
 def run loc
@@ -46,28 +47,10 @@ def parse html
   end
 end
 
-
-if __FILE__ == $0
-  
-  %w(cambridge+ma boston 
-    somerville+ma 
-    salem+ma 
-    providence+ri 
-    salem+ma 
-    portsmouth+nh 
-    portland+me).each {|loc|
-      puts '-' * 20
-      puts "Searching #{loc}"
-      run loc
-  }
-
-end
-
-
-__END__
-
-
-Some notes
-
-# curl 'https://github.com/search?type=Users&language=ruby&q=location:cambridge%2Bma'  > search.sample.xml
+locations = YAML::load_file('config.yml')['locations']
+locations.each {|loc|
+  puts '-' * 20
+  puts "Searching #{loc}"
+  run loc
+}
 

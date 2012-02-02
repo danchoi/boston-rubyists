@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title><%= page_title %></title>
     <link href="/bootstrap.min.css" rel="stylesheet"/>
     <link href="/bootstrap-responsive.min.css" rel="stylesheet"/>
     <link href="/app.css" rel="stylesheet"/>
@@ -10,14 +11,15 @@
 
     <div class="container">
 
-      <a id="bostonrblink" href="http://bostonrb.org">bostonrb.org</a>
-      <h1 class="titleheader">boston rubyists</h1>
+      <a id="bostonrblink" href="org['href']"><%=org['name']%></a>
+      <h1 class="titleheader"><%= page_title %></h1>
 
       <p>
         This site is powered by <a href="www.sinatrarb.com/">Sinatra</a>
         and 
         <a href="http://documentcloud.github.com/backbone/">Backbone.js</a>.
         It should update automatically in-place every few minutes.
+        Get the <a href="https://github.com/danchoi/boston-rubyists">source code</a> on GitHub.
       </p>
 
       <div class="row">

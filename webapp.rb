@@ -3,8 +3,10 @@ require 'sequel'
 require 'json'
 require 'logger'
 require 'nokogiri'
-DB = Sequel.connect "postgres:///bostonruby", logger: Logger.new(STDERR)
+require 'yaml'
+DB = Sequel.connect File.read('database.conf').strip
 
+CONFIG = YAML::load_file 'config.yml'
 class BostonRubyists < Sinatra::Base
 
   helpers {
@@ -20,7 +22,14 @@ class BostonRubyists < Sinatra::Base
       end
       p
     end
+    def page_title
+      CONFIG['page_title']
+    end
+    def org
+      CONFIG['org']
+    end
   }
+
 
   get('/') {
     @updates = DB[:updates].order(:date.desc).limit(110).map {|u| prep u}
