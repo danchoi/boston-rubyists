@@ -4,7 +4,7 @@ $(function() {
   window.Update = Backbone.Model.extend({ idAttribute: 'update_id' });
   window.UpdatesList = Backbone.Collection.extend({
     url: function(){ 
-      return ('/updates?from_time=' + this.models[0].get("date"));
+      return ('/updates?from_time=' + this.models[this.models.length-1].get("date"));
     },
     model: Update,
     comparator: function(x) { return x.get('date'); }
@@ -23,7 +23,7 @@ $(function() {
   window.BlogPost = Backbone.Model.extend({ idAttribute: 'href' });
   window.BlogPostsList = Backbone.Collection.extend({
     url: function() {
-      return ('/blog_posts?from_time=' + this.models[0].get("date"));
+      return ('/blog_posts?from_time=' + this.models[this.models.length-1].get("date"));
     },
     model: BlogPost,
     comparator: function(x) { return x.get('date'); }
@@ -68,6 +68,6 @@ $(function() {
   setInterval(function () {
     Updates.fetch({add: true});
     BlogPosts.fetch({add: true});
-  }, 2000);
+  }, 3000);
 
 });
