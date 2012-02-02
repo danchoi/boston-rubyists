@@ -9,6 +9,8 @@ CONFIG = YAML::load_file 'config.yml'
 DB = Sequel.connect CONFIG['database']
 
 class BostonRubyists < Sinatra::Base
+  set :static, true
+  set :root, File.dirname(__FILE__)
 
   helpers {
     def prep(p)
