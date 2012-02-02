@@ -23,10 +23,20 @@
       </p>
 
       <div class="row">
-        <div class="span6">
+        <div class="span2">
+          <% @hackers.each do |h| %>
+          <li>
+            <a 
+              title="<%= h[:followers] %> followers | <%= h[:repos] %> repos"
+              href="https://github.com/<%=h[:name]%>"><%=h[:name]%></a>
+            <span class="location"><%= h[:location].gsub(/[\s,].*$/, '') %></span>
+          </li>
+          <% end %>
+        </div>
+        <div class="span5">
           <div id="updates"> </div>
         </div>
-        <div class="span6">
+        <div class="span5">
           <div id="blogposts"> </div>
         </div>
       </div>

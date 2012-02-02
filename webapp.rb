@@ -7,6 +7,7 @@ require 'yaml'
 
 CONFIG = YAML::load_file 'config.yml'
 DB = Sequel.connect CONFIG['database']
+
 class BostonRubyists < Sinatra::Base
 
   helpers {
@@ -32,8 +33,8 @@ class BostonRubyists < Sinatra::Base
     end
   }
 
-
   get('/') {
+    @hackers = DB[:hackers].order(:followers.desc).to_a
     @updates = DB[:updates].order(:date.desc).limit(110).map {|u| prep u}
     @blog_posts = DB[:blog_posts].order(:date.desc).limit(90).map {|p| prep p}
     erb :index 

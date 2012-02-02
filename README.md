@@ -63,3 +63,8 @@ The other two tasks should be run periodically to keep the content up to date. U
 some other tool.
 
 
+## Running the webapp
+
+    rackup
+
+

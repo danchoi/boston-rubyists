@@ -1,6 +1,6 @@
 .container {
   margin-bottom: 50px;
-  height: 7200px;
+  height: 7800px;
   overflow:hidden;
 }
 .titleheader {
@@ -28,4 +28,8 @@ img { width: 30px; float:left; margin-right: 10px; }
 #bostonrblink {
   margin-top: 1em;
   float:right;
+}
+.location {
+  color: #CCC;
+  font-size: smaller;
 }
