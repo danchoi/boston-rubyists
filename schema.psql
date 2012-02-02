@@ -1,4 +1,12 @@
-drop table if exists updates;
+
+create table hackers (
+  name varchar primary key,
+  followers integer,
+  repos integer,
+  location varchar,
+  updated timestamp
+);
+
 create table updates (
   update_id varchar primary key,
   author varchar,
