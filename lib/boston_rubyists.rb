@@ -3,6 +3,7 @@ require 'sequel'
 require 'json'
 require 'logger'
 require 'nokogiri'
+require 'tzinfo'
 DB = Sequel.connect "postgres:///bostonruby", logger: Logger.new(STDERR)
 
 class BostonRubyists < Sinatra::Base
