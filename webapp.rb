@@ -4,9 +4,9 @@ require 'json'
 require 'logger'
 require 'nokogiri'
 require 'yaml'
-DB = Sequel.connect File.read('database.conf').strip
 
 CONFIG = YAML::load_file 'config.yml'
+DB = Sequel.connect CONFIG['database']
 class BostonRubyists < Sinatra::Base
 
   helpers {

@@ -7,7 +7,9 @@ require 'nokogiri'
 require 'csv'
 require 'sequel'
 require 'yaml'
-DB = Sequel.connect File.read('database.conf').strip
+
+CONFIG = YAML::load_file("config.yml")
+DB = Sequel.connect CONFIG['database']
 
 def run loc
   url =  "https://github.com/search?type=Users&language=ruby&q=location:#{loc.gsub("+", "%2B")}"
@@ -47,7 +49,7 @@ def parse html
   end
 end
 
-locations = YAML::load_file('config.yml')['locations']
+locations = CONFIG['locations']
 locations.each {|loc|
   puts '-' * 20
   puts "Searching #{loc}"

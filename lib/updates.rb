@@ -5,7 +5,8 @@ require 'open-uri'
 require 'yaml'
 require 'curb'
 
-DB = Sequel.connect File.read('database.conf').strip
+CONFIG = YAML::load_file("config.yml")
+DB = Sequel.connect CONFIG['database']
 
 def update_atom atom_xml
   d = Nokogiri::XML.parse atom_xml

@@ -6,9 +6,11 @@ require 'nokogiri'
 require 'feed_yamlizer'
 require 'yaml'
 require 'sequel'
-DB = Sequel.connect File.read('database.conf').strip
 
-opml_url = YAML::load_file("config.yml")['opml']
+CONFIG = YAML::load_file("config.yml")
+DB = Sequel.connect CONFIG['database']
+opml_url = CONFIG['opml']
+
 opml = `curl -Ls "#{opml_url}"`
 feeds = Nokogiri::XML(opml).search('outline').map {|o| o[:xmlUrl]}
 feeds.each {|f|
