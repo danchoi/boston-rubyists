@@ -1,60 +1,73 @@
 
 $(function() {
-
-  window.Update = Backbone.Model.extend({
-    idAttribute: 'update_id',
-    initialize: function() {
-    }
-  });
-
+  _.templateSettings = { interpolate : /\{\{(.+?)\}\}/g };
+  window.Update = Backbone.Model.extend({ idAttribute: 'update_id' });
   window.UpdatesList = Backbone.Collection.extend({
-    url: function(){
+    url: function(){ 
       return ('/updates?from_time=' + this.models[0].get("date"));
     },
     model: Update,
-    comparator: function(update) {
-      return update.get('date');
-    }
+    comparator: function(x) { return x.get('date'); }
   });
-
   window.Updates = new UpdatesList();
-
-
-  _.templateSettings = {
-    interpolate : /\{\{(.+?)\}\}/g
-  };
-
   window.UpdateView = Backbone.View.extend({
     tagName: "div",
     classNme: "update",
     template: _.template( $('#update-template').html() ),
-    initialize: function() {
-    },
     render: function() {
-      // http://documentcloud.github.com/underscore/#template
       $(this.el).html(this.template(this.model.toJSON()));
       return this;
     }
-    
   });
+
+  window.BlogPost = Backbone.Model.extend({ idAttribute: 'href' });
+  window.BlogPostsList = Backbone.Collection.extend({
+    url: function() {
+      return ('/blog_posts?from_time=' + this.models[0].get("date"));
+    },
+    model: BlogPost,
+    comparator: function(x) { return x.get('date'); }
+  });
+  window.BlogPosts = new BlogPostsList();
+  window.BlogPostView = Backbone.View.extend({
+    tagName: "div",
+    classNme: "blogpost",
+    template: _.template( $('#blogpost-template').html() ),
+    render: function() {
+      $(this.el).html(this.template(this.model.toJSON()));
+      return this;
+    }
+  });
+
 
   window.AppView = Backbone.View.extend({
     initialize: function() {
-      Updates.bind('add', this.addOne, this);
-      Updates.bind('reset', this.addAll, this);
-      Updates.bind('all', this.render, this);
+      Updates.bind('add', this.addOneUpdate, this);
+      Updates.bind('reset', this.addAllUpdates, this);
+      Updates.bind('refresh', this.addAllUpdates, this);
+
+      BlogPosts.bind('add', this.addOneBlogPost, this);
+      BlogPosts.bind('reset', this.addAllBlogPosts, this);
+      Updates.bind('refresh', this.addAllBlogPosts, this);
     },
-    render: function() { },
-    addOne: function(update) {
-      var view = new UpdateView({model: update});
-      $("#updates").prepend(view.render().el);
+    addOneUpdate: function(x) {
+      var updateView = new UpdateView({model: x});
+      $("#updates").prepend(updateView.render().el);
     },
-    addAll: function() {
-      Updates.each(this.addOne);
+    addAllUpdates: function() { Updates.each(this.addOneUpdate); },
+
+    addOneBlogPost: function(x) {
+      var blogpostView = new BlogPostView({model: x});
+      $("#blogposts").prepend(blogpostView.render().el);
     },
-    
+    addAllBlogPosts: function() { BlogPosts.each(this.addOneBlogPost); },
   });
 
   window.App = new AppView;
+
+  setInterval(function () {
+    Updates.fetch({add: true});
+    BlogPosts.fetch({add: true});
+  }, 2000);
 
 });

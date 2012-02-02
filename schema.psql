@@ -6,4 +6,13 @@ create table updates (
   title varchar,
   content text,
   media varchar 
-)
+);
+
+create table blog_posts (
+  blog varchar,
+  href varchar unique,
+  title varchar,
+  author varchar,
+  date timestamp,
+  summary text
+);

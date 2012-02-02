@@ -15,7 +15,7 @@ class GitStream
         author: e.at('name').inner_text,
         date: Time.parse(e.at('published').inner_text), # .strftime("%b %d %I:%M%p"), 
         title: e.at('title').inner_text,
-        content: e.at('content').inner_text,
+        content: e.at('content').inner_text.gsub(/^/, ' ' * 6).gsub(/href="\//, 'href="https://github.com/') 
         media: e.xpath('media:thumbnail',{'media'=>"http://search.yahoo.com/mrss/"}).first[:url]
       }
       if DB[:updates].first update_id:item[:update_id]

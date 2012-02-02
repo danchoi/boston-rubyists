@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      img { width: 30px; float:left; margin-right: 10px; }
-      .update { clear: left }
-    </style>
+    <link href="/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/bootstrap-responsive.min.css" rel="stylesheet"/>
+    <link href="/app.css" rel="stylesheet"/>
+
   </head>
   <body>
-    <h1>boston rubyists</h1>
 
-    <div id="updates">
-      <% @updates.each do |u| %>
-      <% next %>
-      <div class="update">
-  <img src="<%=u[:media]%>"/>
-  <%= u[:content].gsub(/^/, ' ' * 6).gsub(/href="\//, 'href="https://github.com/') %>
-      </div><!-- update -->
-      <% end %>
+    <div class="container">
+
+      <a id="bostonrblink" href="http://bostonrb.org">bostonrb.org</a>
+      <h1 class="titleheader">boston rubyists</h1>
+
+      <p>
+        This site is powered by <a href="www.sinatrarb.com/">Sinatra</a>
+        and 
+        <a href="http://documentcloud.github.com/backbone/">Backbone.js</a>.
+        It should update automatically in-place every few minutes.
+      </p>
+
+      <div class="row">
+        <div class="span6">
+          <div id="updates"> </div>
+        </div>
+        <div class="span6">
+          <div id="blogposts"> </div>
+        </div>
+      </div>
+
     </div>
-
   
-    <script type="text/javascript" src="/underscore.js"></script>
+    <script type="text/javascript" src="/underscore-min.js"></script>
     <script type="text/javascript" src="/jquery-1.7.1.js "></script>
-    <script type="text/javascript" src="/backbone.js"></script>
+    <script type="text/javascript" src="/backbone-min.js"></script>
     <script type="text/javascript" src="/app.js"></script>
 
     <script>
       // Set up the "play" buttons for each runnable code example.
       $(function() {
         Updates.reset(<%= @updates.to_json %>);
+        BlogPosts.reset(<%= @blog_posts.to_json %>);
       });
     </script>
 
@@ -37,13 +49,21 @@
 
     <script type="text/template" id="update-template">
       <div class="update">
-        <div class="display">
+          <span class="date">{{ date_string }}</span>
           <img src="{{ media }}"/>
-          <span>{{ date }}</span>
           {{ content }}
-        </div>
       </div>
     </script>
+
+    <script type="text/template" id="blogpost-template">
+      <div class="blogpost">
+        <span class="date">{{ date_string }}</span>
+        <h4>{{ blog }}</h4>
+        <h3><a href="{{href}}">{{ title }}</a></h3>
+        <p>{{ summary }}</p>
+      </div>
+    </script>
+
 
   </body>
 
