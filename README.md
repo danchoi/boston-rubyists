@@ -12,7 +12,7 @@ configurable, so you can deploy a version for your own hacker community.
 
 Screenshot:
 
-![img](https://github.com/danchoi/boston-rubyists/raw/master/screenshots/screen.png)
+![img](https://github.com/danchoi/boston-rubyists/raw/master/screenshots/screen2.png)
 
 The demo of this site can be seen [here][demo], unless it is down.
 
