@@ -1,5 +1,8 @@
 # boston-rubyists
 
+
+![img](https://github.com/danchoi/boston-rubyists/raw/master/screenshots/screen.png)
+
 The demo of this site can be seen [here][demo], unless it is down.
 
 [demo]:http://poddb.com:9292
