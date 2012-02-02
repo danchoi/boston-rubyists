@@ -14,6 +14,13 @@ img { width: 30px; float:left; margin-right: 10px; }
   color: #CCC;
 }
 
+.leftBar ul {
+  list-style-type: none;
+  margin-left:0;
+}
+.blogs li {
+  margin-top: 0.5em;
+}
 .update { 
   clear: left;
   border-top: 1px dotted #ECECEC;

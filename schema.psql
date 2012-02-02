@@ -17,8 +17,10 @@ create table updates (
 );
 create index updates_date_idx on updates (date);
 
+
 create table blog_posts (
   blog varchar,
+  feed_url varchar, 
   href varchar unique,
   title varchar,
   author varchar,
@@ -40,3 +42,13 @@ create table tweets (
   retweet_count integer default 0
 );
 create index tweets_created_at_idx on tweets (created_at);
+
+
+create table blogs (
+  title varchar,
+  html_url varchar; 
+  feed_url varchar
+);
+
+
+

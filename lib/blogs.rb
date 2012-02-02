@@ -12,8 +12,17 @@ DB = Sequel.connect CONFIG['database']
 opml_url = CONFIG['opml']
 
 opml = `curl -Ls "#{opml_url}"`
-feeds = Nokogiri::XML(opml).search('outline').map {|o| o[:xmlUrl]}
+feeds = Nokogiri::XML(opml).search('outline').map {|o| 
+  t = o[:text]
+  if DB[:blogs].first title: t
+    # nothing
+  else
+    DB[:blogs].insert title:t, feed_url:o[:xmlUrl], html_url:o[:htmlUrl]
+  end
+  o[:xmlUrl]
+}
 feeds.each {|f|
+
   feedyml = `curl -Ls '#{f}' | feed2yaml`
   x = YAML::load feedyml
   x[:items].each { |i| 
@@ -29,9 +38,9 @@ feeds.each {|f|
     if content
       content.force_encoding("UTF-8")
     end
-    puts content
     e = { 
       blog: x[:meta][:title],
+      feed_url: f,
       href: i[:link],
       title: i[:title],
       author: i[:author],

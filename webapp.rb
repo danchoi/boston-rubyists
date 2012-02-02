@@ -49,6 +49,7 @@ class BostonRubyists < Sinatra::Base
     @hackers = DB[:hackers].order(:followers.desc).to_a
     @updates = DB[:updates].order(:date.desc).limit(110).map {|u| prep u}
     @tweets = DB[:tweets].order(:created_at.desc).limit(200).map {|t| prep_tweet t}
+    @blogs = DB[:blogs].all
     @blog_posts = DB[:blog_posts].order(:date.desc).limit(90).map {|p| prep p}
     erb :index 
   }
