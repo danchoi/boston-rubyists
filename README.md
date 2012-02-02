@@ -68,3 +68,8 @@ some other tool.
     rackup
 
 
+## Contribute
+
+Please feel free to fork and enhance.
+
+If you want to use this for another hacker subculture, please do.
