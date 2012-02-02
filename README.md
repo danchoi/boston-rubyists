@@ -60,7 +60,7 @@ copy the pattern in `config.yml.example`:
 * `opml` is an OPML file that contains a list of all the blogs you want to aggregate.
 * `locations` is a list of GitHub search "location" filters.
 * `language` is a programming language filter to use for the GitHub users search.
-* `poll_interval` is the interval in seconds that the Backbone.js client code should poll the Sinatra app for updates. Sorry, no websockets yet.
+* `poll_interval` is the interval in seconds at which the Backbone.js client code should poll the Sinatra app for updates. Sorry, no websockets yet.
 * `twitters` is a URL of a page that contains a list of Twitter user URLs
 
 Set up the database you configured in config.yml like this, substituting the 
