@@ -78,4 +78,4 @@ please drop me a line to let me know you're using this tool!
 
 ## Authors
 
-* Daniel Choi [https://github.com/danchoi][github]
+* Daniel Choi [https://github.com/danchoi](github) [http://twitter.com/danchoi](twitter)
