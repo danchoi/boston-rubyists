@@ -46,6 +46,7 @@ copy the pattern in `config.yml.example`:
       href: http://bostonrb.org
     opml: http://www.blogbridge.com/rl/291/Boston+Ruby.opml
     twitters: https://github.com/bostonrb/bostonrb/wiki/All-Rubyists
+    language: ruby
     locations: 
     - cambridge+ma 
     - boston 
