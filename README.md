@@ -74,7 +74,7 @@ There are four rake tasks you should run to populate the data:
     rake hackers
     rake updates
     rake blogs
-    rake twitters
+    rake tweets
 
 Run `rake hackers` first to populate the hackers table in the database.
 
