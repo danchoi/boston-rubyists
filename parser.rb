@@ -3,6 +3,8 @@ require 'time'
 require 'sequel'
 require 'open-uri'
 require 'yaml'
+require 'curb'
+
 DB = Sequel.connect File.read('database.conf').strip
 
 class GitStream
@@ -15,7 +17,7 @@ class GitStream
         author: e.at('name').inner_text,
         date: Time.parse(e.at('published').inner_text), # .strftime("%b %d %I:%M%p"), 
         title: e.at('title').inner_text,
-        content: e.at('content').inner_text.gsub(/^/, ' ' * 6).gsub(/href="\//, 'href="https://github.com/') 
+        content: e.at('content').inner_text.gsub(/^/, ' ' * 6).gsub(/href="\//, 'href="https://github.com/'),
         media: e.xpath('media:thumbnail',{'media'=>"http://search.yahoo.com/mrss/"}).first[:url]
       }
       if DB[:updates].first update_id:item[:update_id]
@@ -29,18 +31,30 @@ class GitStream
   end
 
   def update_list programmers
-    activity = programmers.select {|p| p =~ /\w+/}.inject([]) {|m, programmer|
-      programmer.chomp!
-      print programmer
-      cmd  = "curl -sL 'https://github.com/#{programmer}.atom'"
-      atom_xml = `#{cmd}`
-      new = update_atom atom_xml
-      if new.size > 0 
-        print " -> #{new.size} new items" 
-        m << ({programmer:programmer, items:new.size})
-      end
-      print "\n"
-      m
+    m = Curl::Multi.new
+    activity = []
+    programmers.select {|p| p =~ /\w+/}.map{|p| p.chomp}.each_slice(10).each {|slice|
+      slice.each {|programmer|
+        puts "Fetching GitHub activity for #{programmer}"
+        res = {:body => "", :headers => ""}
+        url  = "https://github.com/#{programmer}.atom"
+        puts url
+        c = Curl::Easy.new(url) { |curl|
+          curl.on_body {|data| res[:body] << data; data.size}
+          curl.on_header {|data| res[:headers] << data; data.size}
+          curl.on_success {|easy| 
+            puts "Success for #{programmer}"
+            new = update_atom res[:body]
+            if new.size > 0 
+              puts "#{programmer} -> #{new.size} new items" 
+              activity << ({programmer:programmer, items:new.size})
+            end
+            print "\n"
+          }
+        }
+        m.add c
+      }
+      m.perform
     }
     puts activity.to_yaml
   end
