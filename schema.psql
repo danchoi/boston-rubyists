@@ -15,6 +15,7 @@ create table updates (
   content text,
   media varchar 
 );
+create index updates_date_idx on updates (date);
 
 create table blog_posts (
   blog varchar,
@@ -24,3 +25,4 @@ create table blog_posts (
   date timestamp,
   summary text
 );
+create index blog_posts_date_idx on updates (date);
