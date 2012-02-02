@@ -31,6 +31,7 @@ copy the pattern in `config.yml.example`:
       name: bostonrb.org
       href: http://bostonrb.org
     opml: http://www.blogbridge.com/rl/291/Boston+Ruby.opml
+    twitters: https://github.com/bostonrb/bostonrb/wiki/All-Rubyists
     locations: 
     - cambridge+ma 
     - boston 
@@ -41,11 +42,10 @@ copy the pattern in `config.yml.example`:
     - portsmouth+nh 
     - portland+me
 
-`opml` is an OPML file that contains a list of all the blogs you want to
-aggregate. `locations` is a list of GitHub search "location" filters.
-
-`poll_interval` is the interval in second you want the Backbone.js client code to
-poll the Sinatra app for updates.  Sorry, no websockets yet.
+* `opml` is an OPML file that contains a list of all the blogs you want to aggregate.
+* `locations` is a list of GitHub search "location" filters.
+* `poll_interval` is the interval in second you want the Backbone.js client code to poll the Sinatra app for updates. Sorry, no websockets yet.
+* `twitters` is a URL of a page that contains a list of Twitter user URLs
 
 Set up the database you configured in config.yml like this, substituting the 
 right name for your database.
@@ -55,17 +55,16 @@ right name for your database.
 
 ## Populating the database
 
-There are three rake tasks you should run to populate the data:
+There are four rake tasks you should run to populate the data:
 
     rake hackers
-
     rake updates
-
     rake blogs
+    rake twitters
 
 Run `rake hackers` first to populate the hackers table in the database.
 
-The other two tasks should be run periodically to keep the content up to date. Use cron or 
+The other three tasks should be run periodically to keep the content up to date. Use cron or 
 some other tool.
 
 ## Running the webapp
