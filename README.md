@@ -8,6 +8,7 @@ The demo of this site can be seen [here][demo], unless it is down.
 
 * PostgreSQL
 * Ruby 1.9
+* tidy (HTML tidy) should be on your path
 
 ## Setup
 
@@ -61,7 +62,6 @@ Run `rake hackers` first to populate the hackers table in the database.
 
 The other two tasks should be run periodically to keep the content up to date. Use cron or 
 some other tool.
-
 
 ## Running the webapp
 
