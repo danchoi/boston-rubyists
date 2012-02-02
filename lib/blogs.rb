@@ -25,6 +25,11 @@ feeds.each {|f|
         words[0..-2].join(' ') + '...' 
       end
     end
+
+    if content
+      content.force_encoding("UTF-8")
+    end
+    puts content
     e = { 
       blog: x[:meta][:title],
       href: i[:link],
