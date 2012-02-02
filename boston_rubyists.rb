@@ -1,17 +1,21 @@
 require 'sinatra'
 require 'sequel'
 require 'json'
-DB = Sequel.connect "postgres:///bostonruby"
+require 'logger'
+DB = Sequel.connect "postgres:///bostonruby", logger: Logger.new(STDERR)
 
 class BostonRubyists < Sinatra::Base
 
   get('/') {
-    @updates = DB[:updates].order(:date.desc).limit(400).to_a
+    ds = DB[:updates].order(:date.desc).limit(400).
+      filter("date < now() - interval '5 hour'")
+    @updates = ds.to_a[0,3]
     erb :index 
   }
 
   get('/updates') {
-    @updates = DB[:updates].order(:date.desc).limit(400).to_a
+    ds = DB[:updates].order(:date.desc).limit(400)
+    @updates = ds.filter("date > ?", params[:from_time]).to_a
     @updates.to_json
   }
 

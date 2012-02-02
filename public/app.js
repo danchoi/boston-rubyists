@@ -8,10 +8,12 @@ $(function() {
   });
 
   window.UpdatesList = Backbone.Collection.extend({
-    url: '/updates',
+    url: function(){
+      return ('/updates?from_time=' + this.models[0].get("date"));
+    },
     model: Update,
     comparator: function(update) {
-      return -update.get('date');
+      return update.get('date');
     }
   });
 
@@ -41,7 +43,6 @@ $(function() {
       Updates.bind('add', this.addOne, this);
       Updates.bind('reset', this.addAll, this);
       Updates.bind('all', this.render, this);
-      Updates.fetch();
     },
     render: function() { },
     addOne: function(update) {
