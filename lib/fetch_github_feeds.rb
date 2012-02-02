@@ -35,28 +35,26 @@ def update_list hackers
   activity = []
   hackers.select {|p| p =~ /\w+/}.map{|p| p.chomp}.each_slice(10).each {|slice|
     slice.each {|programmer|
-      puts "Fetching GitHub activity for #{programmer}"
       res = {:body => "", :headers => ""}
       url  = "https://github.com/#{programmer}.atom"
-      puts url
       c = Curl::Easy.new(url) { |curl|
         curl.on_body {|data| res[:body] << data; data.size}
         curl.on_header {|data| res[:headers] << data; data.size}
         curl.on_success {|easy| 
-          puts "Success for #{programmer}"
           new = update_atom res[:body]
           if new.size > 0 
             puts "#{programmer} -> #{new.size} new items" 
             activity << ({programmer:programmer, items:new.size})
+          else
+            $stdout.print "."
           end
-          print "\n"
         }
       }
       m.add c
     }
     m.perform
   }
-  puts activity.to_yaml
+  # puts activity.to_yaml
 end
   
 
