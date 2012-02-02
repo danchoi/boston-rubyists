@@ -7,7 +7,7 @@ DB = Sequel.connect "postgres:///bostonruby", logger: Logger.new(STDERR)
 class BostonRubyists < Sinatra::Base
 
   get('/') {
-    ds = DB[:updates].order(:date.desc).limit(100)
+    ds = DB[:updates].order(:date.desc).limit(40)
     @updates = ds.to_a.map {|x| 
       x[:content] = x[:content].gsub(/^/, ' ' * 6).gsub(/href="\//, 'href="https://github.com/') 
       x
