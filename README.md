@@ -1,6 +1,8 @@
 # boston-rubyists
 
-The demo of this site can be seen at http://poddb:9292, unless it is down.
+The demo of this site can be seen [here][demo], unless it is down.
+
+[demo]:http://poddb:9292
 
 ## Requires
 
