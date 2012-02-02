@@ -24,10 +24,12 @@ class BostonRubyists < Sinatra::Base
     end
 
     def prep_tweet t
+      t[:user_screen_name]
+      tweet_href = "<a href='http://twitter.com/#{t[:user_screen_name]}/status/#{t[:id]}'>#{t[:created_at].strftime("%b %d %I:%M %p")}</a>"
       t[:user_screen_name].gsub!(/.*/, '<a href="http://twitter.com/\0">\0</a>')
       new = t[:text].gsub(/http:[\S,\]\)\.\;]+/, '<a href="\0">\0</a>')
       new = new.gsub(/@(\w+)/, '<a href="http://twitter.com/\1">@\1</a>')
-      t[:date_string] = t[:created_at].strftime("%b %d %I:%M %p")
+      t[:date_string] = tweet_href
       t[:text] = new 
       t
     end
