@@ -12,7 +12,7 @@ CONFIG = YAML::load_file("config.yml")
 DB = Sequel.connect CONFIG['database']
 
 def run loc
-  url =  "https://github.com/search?type=Users&language=ruby&q=location:#{loc.gsub("+", "%2B")}"
+  url =  "https://github.com/search?type=Users&language=#{CONFIG['language']}&q=location:#{loc.gsub("+", "%2B")}"
   puts url
   fetch_parse url
 end

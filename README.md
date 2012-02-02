@@ -1,5 +1,14 @@
 # boston-rubyists
 
+This project lets you easily set up a super-[planet][planet] that aggregates the GitHub feeds, 
+tweets, and blogs of your local hacker community. 
+
+It was created for [BostonRB][bostonrb] (Boston Ruby Group), but it's
+configurable, so you can deploy a version for your own hacker community.
+
+[planet]:http://en.wikipedia.org/wiki/Planet_%28software%29
+[bostonrb]:http://bostonrb.org/
+
 
 Screenshot:
 
@@ -44,6 +53,7 @@ copy the pattern in `config.yml.example`:
 
 * `opml` is an OPML file that contains a list of all the blogs you want to aggregate.
 * `locations` is a list of GitHub search "location" filters.
+* `language` is a programming language filter to use for the GitHub userssearch.
 * `poll_interval` is the interval in second you want the Backbone.js client code to poll the Sinatra app for updates. Sorry, no websockets yet.
 * `twitters` is a URL of a page that contains a list of Twitter user URLs
 
