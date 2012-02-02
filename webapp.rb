@@ -18,7 +18,6 @@ class BostonRubyists < Sinatra::Base
       if p[:summary] && (n = Nokogiri::HTML(p[:summary]).at('p'))
          words = n.inner_text[0,355].split(/\s/)
          p[:summary] = words[0..-2].join(' ') + '...' 
-        
       end
       p
     end
@@ -27,6 +26,9 @@ class BostonRubyists < Sinatra::Base
     end
     def org
       CONFIG['org']
+    end
+    def poll_interval
+      CONFIG['poll_interval'] * 1000
     end
   }
 

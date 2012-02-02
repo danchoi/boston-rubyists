@@ -65,9 +65,4 @@ $(function() {
 
   window.App = new AppView;
 
-  setInterval(function () {
-    Updates.fetch({add: true});
-    BlogPosts.fetch({add: true});
-  }, 3000);
-
 });

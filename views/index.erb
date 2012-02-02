@@ -43,6 +43,11 @@
       $(function() {
         Updates.reset(<%= @updates.to_json %>);
         BlogPosts.reset(<%= @blog_posts.to_json %>);
+
+        setInterval(function () {
+          Updates.fetch({add: true});
+          BlogPosts.fetch({add: true});
+        }, <%= poll_interval %>);
       });
     </script>
 

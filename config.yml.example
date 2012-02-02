@@ -1,4 +1,6 @@
+database: postgres:///bostonruby
 page_title: boston rubyists
+poll_interval: 10
 org: 
   name: bostonrb.org
   href: http://bostonrb.org
