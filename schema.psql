@@ -46,7 +46,7 @@ create index tweets_created_at_idx on tweets (created_at);
 
 create table blogs (
   title varchar,
-  html_url varchar; 
+  html_url varchar, 
   feed_url varchar
 );
 
