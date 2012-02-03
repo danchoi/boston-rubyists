@@ -64,4 +64,5 @@ img { width: 30px; float:left; margin-right: 10px; }
 blockquote p {
   font-size: 12px;
   line-height: 18.5px;
+  overflow:hidden;
 }
