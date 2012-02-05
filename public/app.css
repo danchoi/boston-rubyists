@@ -40,6 +40,7 @@ img { width: 30px; float:left; margin-right: 10px; }
   clear: left;
   border-top: 1px dotted #ECECEC;
   font-size: smaller;
+  overflow:hidden;
 }
   .tweet p { 
     margin-bottom: 2px;
