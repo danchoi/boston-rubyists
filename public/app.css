@@ -25,7 +25,7 @@ img { width: 30px; float:left; margin-right: 10px; }
 .update { 
   clear: left;
   border-top: 1px dotted #ECECEC;
-  padding-top: 0.4em;
+  margin-top: 0.4em;
   padding-bottom: 0px;
 }
   .update img {
@@ -41,6 +41,7 @@ img { width: 30px; float:left; margin-right: 10px; }
   clear: left;
   border-top: 1px dotted #ECECEC;
   font-size: smaller;
+  overflow:hidden;
 }
   .tweet p { 
     margin-bottom: 2px;
@@ -61,5 +62,10 @@ img { width: 30px; float:left; margin-right: 10px; }
 .tweet img {
   float: left;
   padding-top:5px;
+}
+blockquote p {
+  font-size: 12px;
+  line-height: 18.5px;
+  overflow:hidden;
 }
 
