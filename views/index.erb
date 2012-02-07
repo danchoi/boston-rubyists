@@ -5,7 +5,9 @@
     <link href="/bootstrap.min.css" rel="stylesheet"/>
     <link href="/bootstrap-responsive.min.css" rel="stylesheet"/>
     <link href="/app.css" rel="stylesheet"/>
-
+    <% if config['weather'] %>
+      <link href="/weather.css" rel="stylesheet"/>
+    <% end %>
   </head>
   <body>
 
@@ -13,8 +15,12 @@
 
       <a id="bostonrblink" href="<%=org['href']%>"><%=org['name']%></a>
       <h1 class="titleheader"><%= page_title %></h1>
+      <% if config['weather'] %>
+        <div id="weather"></div>
+      <% end %>
 
-      <p>
+      
+      <p style="clear:left">
         This site is powered by <a href="www.sinatrarb.com/">Sinatra</a>
         and 
         <a href="http://documentcloud.github.com/backbone/">Backbone.js</a>.
@@ -72,6 +78,14 @@
           BlogPosts.fetch({add: true});
           Tweets.fetch({add: true});
         }, <%= poll_interval %>);
+
+        <% if config['weather'] %>
+        function updateWeather() {
+          $.get("/weather", function(data) { $("#weather").html(data); });
+        }
+        updateWeather();
+        setInterval(updateWeather, (30 * 1000));
+        <% end %>
       });
     </script>
 
