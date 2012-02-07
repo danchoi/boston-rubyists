@@ -6,6 +6,7 @@
 .titleheader {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
+  float:left;
 }
 img { width: 30px; float:left; margin-right: 10px; }
 .date {
@@ -62,8 +63,3 @@ img { width: 30px; float:left; margin-right: 10px; }
   padding-top:5px;
 }
 
-#weather {
-  height: 150px;
-  width: 200px;
-  display:inline;
-}
