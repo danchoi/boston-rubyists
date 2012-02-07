@@ -45,6 +45,10 @@ class BostonRubyists < Sinatra::Base
     def poll_interval
       CONFIG['poll_interval'] * 1000
     end
+
+    def config
+      CONFIG
+    end
   }
 
   get('/') {
@@ -71,6 +75,14 @@ class BostonRubyists < Sinatra::Base
     @tweets = ds.map {|p| prep_tweet p}
     @tweets.to_json
   }
+
+  if CONFIG['weather']
+    # The weather config item can point to a Sinatra app that serves up a mini
+    # weather report HTML page. This will served as an html fragment.
+    get('/weather') {
+      `curl -s '#{CONFIG['weather']}'`
+    }
+  end
 
   run! if app_file == $0
 end

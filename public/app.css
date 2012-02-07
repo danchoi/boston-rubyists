@@ -61,3 +61,9 @@ img { width: 30px; float:left; margin-right: 10px; }
   float: left;
   padding-top:5px;
 }
+
+#weather {
+  height: 150px;
+  width: 200px;
+  display:inline;
+}
