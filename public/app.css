@@ -27,6 +27,7 @@ img { width: 30px; float:left; margin-right: 10px; }
   border-top: 1px dotted #ECECEC;
   margin-top: 0.4em;
   padding-bottom: 0px;
+  overflow: hidden;
 }
   .update img {
     margin-top:5px;
