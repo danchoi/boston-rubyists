@@ -5,6 +5,7 @@ require 'logger'
 require 'nokogiri'
 require 'yaml'
 require 'uri'
+require 'timeout'
 
 CONFIG = YAML::load_file 'config.yml'
 DB = Sequel.connect CONFIG['database']
@@ -80,7 +81,13 @@ class BostonRubyists < Sinatra::Base
     # The weather config item can point to a Sinatra app that serves up a mini
     # weather report HTML page. This will served as an html fragment.
     get('/weather') {
-      `curl -s '#{CONFIG['weather']}'`
+      begin
+        Timeout::timeout(20) {
+          `curl -s '#{CONFIG['weather']}'`
+        }
+      rescue Timeout::Error
+        halt 500, "weather service not responding"
+      end
     }
   end
 

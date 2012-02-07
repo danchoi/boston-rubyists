@@ -80,10 +80,11 @@
         }, <%= poll_interval %>);
 
         <% if config['weather'] %>
-        $.get("/weather", function(data) {
-          $("#weather").html(data);
-        });
-
+        function updateWeather() {
+          $.get("/weather", function(data) { $("#weather").html(data); });
+        }
+        updateWeather();
+        setInterval(updateWeather, (30 * 1000));
         <% end %>
       });
     </script>
