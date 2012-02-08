@@ -75,9 +75,12 @@
 
         setInterval(function () {
           Updates.fetch({add: true});
-          BlogPosts.fetch({add: true});
           Tweets.fetch({add: true});
         }, <%= poll_interval %>);
+
+        setInterval(function () {
+          BlogPosts.fetch({add: true});
+        }, (5 * 60 * 1000));
 
         <% if config['weather'] %>
         function updateWeather() {

@@ -82,7 +82,7 @@ class BostonRubyists < Sinatra::Base
     # weather report HTML page. This will served as an html fragment.
     get('/weather') {
       begin
-        Timeout::timeout(20) {
+        Timeout::timeout(2) {
           `curl -s '#{CONFIG['weather']}'`
         }
       rescue Timeout::Error
