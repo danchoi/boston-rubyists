@@ -56,6 +56,7 @@ img { width: 30px; float:left; margin-right: 10px; }
   font-size: smaller;
 }
 .tweet_date {
+  float: right;
   color: #CCC;
   font-size: smaller;
 }

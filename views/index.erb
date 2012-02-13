@@ -114,12 +114,11 @@
 
     <script type="text/template" id="tweet-template">
       <div class="tweet">
+        <span class="tweet_date">{{ date_string }}</span>
         <img src="{{user_profile_image_url}}"/>
         <strong>{{ user_screen_name }}</strong>
         <p>
           {{ text }}
-          <br/>
-          <span class="tweet_date">{{ date_string }}</span>
         </p>
       </div>
     </script>
