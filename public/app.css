@@ -1,5 +1,7 @@
 .container {
   margin-bottom: 50px;
+}
+.contentBox {
   height: 7800px;
   overflow:hidden;
 }
@@ -70,3 +72,12 @@ blockquote p {
   overflow:hidden;
 }
 
+.person {
+  display: block;
+  float: left;
+  margin-right: 1em;
+}
+.people {
+  margin-top: 20px;
+  padding-top: 20px;
+}

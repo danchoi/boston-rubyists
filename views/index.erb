@@ -28,30 +28,11 @@
         Get the <a href="https://github.com/danchoi/boston-rubyists">source code</a> on GitHub.
       </p>
 
-      <div class="row">
-        <div class="span2 leftBar">
-          <ul>
-            <% @hackers.each do |h| %>
-            <li>
-              <a 
-                title="<%= h[:followers] %> followers | <%= h[:repos] %> repos"
-                href="https://github.com/<%=h[:name]%>"><%=h[:name]%></a>
-              <span class="location"><%= h[:location].gsub(/[\s,].*$/, '') %></span>
-            </li>
-          <% end %>
-          </ul>
-          <h3>blogs</h3>
-          <ul class="blogs">
-          <%@blogs.each do |blog|%>
-            <li><a href="<%=blog[:html_url]%>"><%=blog[:title]%></a></li>
-          <%end%>
-          </ul>
-
-        </div>
-        <div class="span3">
+      <div class="row contentBox">
+        <div class="span4">
           <div id="updates"> </div>
         </div>
-        <div class="span3">
+        <div class="span4">
           <div id="tweets"> </div>
         </div>
         <div class="span4">
@@ -59,6 +40,21 @@
         </div>
       </div>
 
+      <div class="row people">
+        <div class="span12 leftBar">
+
+          <% @hackers.each do |h| %>
+
+            <div class="person">
+              <a 
+                title="<%= h[:followers] %> followers | <%= h[:repos] %> repos"
+                href="https://github.com/<%=h[:name]%>"><%=h[:name]%></a>&nbsp;<span class="location"><%= h[:location].gsub(/[\s,].*$/, '') %></span>
+            </div>
+
+          <% end %>
+
+        </div>
+      </div>
     </div>
   
     <script type="text/javascript" src="/underscore-min.js"></script>
