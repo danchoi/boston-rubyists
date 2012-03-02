@@ -19,10 +19,10 @@
         <div id="weather"></div>
       <% end %>
 
-      
+
       <p style="clear:left">
         This site is powered by <a href="http://www.sinatrarb.com/">Sinatra</a>
-        and 
+        and
         <a href="http://documentcloud.github.com/backbone/">Backbone.js</a>.
         It should update automatically in-place every few minutes.
         Get the <a href="https://github.com/danchoi/boston-rubyists">source code</a> on GitHub.
@@ -46,9 +46,9 @@
           <% @hackers.each do |h| %>
 
             <div class="person">
-              <a 
+              <a
                 title="<%= h[:followers] %> followers | <%= h[:repos] %> repos"
-                href="https://github.com/<%=h[:name]%>"><%=h[:name]%></a>&nbsp;<span class="location"><%= h[:location].gsub(/[\s,].*$/, '') %></span>
+                href="https://github.com/<%=h[:name]%>"><%=h[:name]%></a>&nbsp;<span class="location"><%= h[:location].to_s.gsub(/[\s,].*$/, '') %></span>
             </div>
 
           <% end %>
@@ -56,7 +56,7 @@
         </div>
       </div>
     </div>
-  
+
     <script type="text/javascript" src="/underscore-min.js"></script>
     <script type="text/javascript" src="/jquery-1.7.1.js"></script>
     <script type="text/javascript" src="/backbone-min.js"></script>
@@ -122,4 +122,3 @@
   </body>
 
 </html>
-
