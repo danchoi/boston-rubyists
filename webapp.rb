@@ -17,6 +17,7 @@ class BostonRubyists < Sinatra::Base
   helpers {
     def prep(p)
       p[:date_string] = p[:date].strftime("%b %d %I:%M %p")
+      p[:date] = p[:date].to_s.sub(/\s*[+-]?\d+$/, '')
       if p[:content]
         # strip Github dates because they are redundant
         p[:content] = p[:content].sub(/\w+ \d+, \d{4}/, '')
@@ -32,6 +33,7 @@ class BostonRubyists < Sinatra::Base
       new = new.gsub(/@(\w+)/, '<a href="http://twitter.com/\1">@\1</a>')
       t[:date_string] = tweet_href
       t[:text] = new
+      t[:created_at] = t[:created_at].to_s.sub(/\s*[+-]?\d+$/, '')
       t
     end
 
