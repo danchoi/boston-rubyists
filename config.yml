@@ -4,7 +4,7 @@ poll_interval: 10
 org: 
   name: relevance.com
   href: http://thinkrelevance.com
-opml: http://localhost:9292/relevance-blogs.xml
+opml: http://relevancers.herokuapp.com/relevance-blogs.xml
 twitters: https://github.com/bostonrb/bostonrb/wiki/All-Rubyists
 language: ruby
 locations: 
