@@ -9,7 +9,7 @@ require 'sequel'
 require 'yaml'
 
 CONFIG = YAML::load_file("config.yml")
-DB = Sequel.connect CONFIG['database']
+DB = Sequel.connect ENV['DATABASE_URL'] || CONFIG['database']
 
 def run loc
   url =  "https://github.com/search?type=Users&language=#{CONFIG['language']}&q=location:#{loc.gsub("+", "%2B")}"

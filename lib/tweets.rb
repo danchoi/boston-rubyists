@@ -4,7 +4,7 @@ require 'nokogiri'
 
 config = YAML::load_file 'config.yml'
 
-DB = Sequel.connect config['database']
+DB = Sequel.connect ENV['DATABASE_URL'] || config['database']
 
 url = config['twitters']
 html = `curl -Ls #{url}`
