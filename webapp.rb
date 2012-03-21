@@ -83,7 +83,7 @@ class BostonRubyists < Sinatra::Base
     if params[:from_time]
       ds = ds.filter("created_at > ?", params[:from_time])
     end
-    @tweets = ds.map {|p| prep_tweet p}
+    @tweets = params[:raw] ? ds.to_a : ds.map {|p| prep_tweet p} 
     @tweets.to_json
   }
 
