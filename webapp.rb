@@ -61,18 +61,28 @@ class BostonRubyists < Sinatra::Base
     erb :index 
   }
 
+  MAX_ITEMS = 90
   get('/updates') {
-    ds = DB[:updates].order(:date.desc).filter("date > ?", params[:from_time])
+    ds = DB[:updates].order(:date.desc).limit(MAX_ITEMS)
+    if params[:from_time]
+      ds = ds.filter("date > ?", params[:from_time])
+    end
     @updates = ds.map {|u| prep u}
     @updates.to_json
   }
   get('/blog_posts') {
-    ds = DB[:blog_posts].order(:date.desc).filter("date > ?", params[:from_time])
+    ds = DB[:blog_posts].order(:date.desc).limit(MAX_ITEMS)
+    if params[:from_time]
+      ds = ds.filter("date > ?", params[:from_time])
+    end
     @blog_posts = ds.map {|p| prep p}
     @blog_posts.to_json
   }
   get('/tweets') {
-    ds = DB[:tweets].order(:created_at.desc).filter("created_at > ?", params[:from_time])
+    ds = DB[:tweets].order(:created_at.desc).limit(MAX_ITEMS)
+    if params[:from_time]
+      ds = ds.filter("created_at > ?", params[:from_time])
+    end
     @tweets = ds.map {|p| prep_tweet p}
     @tweets.to_json
   }
