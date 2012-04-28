@@ -8,7 +8,7 @@ require 'uri'
 require 'timeout'
 
 CONFIG = YAML::load_file 'config.yml'
-DB = Sequel.connect CONFIG['database']
+DB = Sequel.connect ENV['DATABASE_URL'] || CONFIG['database']
 
 class BostonRubyists < Sinatra::Base
   set :static, true
@@ -17,7 +17,8 @@ class BostonRubyists < Sinatra::Base
   helpers {
     def prep(p)
       p[:date_string] = p[:date].strftime("%b %d %I:%M %p")
-      if p[:content] 
+      p[:date] = p[:date].to_s.sub(/\s*[+-]?\d+$/, '')
+      if p[:content]
         # strip Github dates because they are redundant
         p[:content] = p[:content].sub(/\w+ \d+, \d{4}/, '')
       end
@@ -31,7 +32,8 @@ class BostonRubyists < Sinatra::Base
       new = t[:text].gsub(/https?:[\S,\]\)\.\;]+/, '<a href="\0">\0</a>')
       new = new.gsub(/@(\w+)/, '<a href="http://twitter.com/\1">@\1</a>')
       t[:date_string] = tweet_href
-      t[:text] = new 
+      t[:text] = new
+      t[:created_at] = t[:created_at].to_s.sub(/\s*[+-]?\d+$/, '')
       t
     end
 
@@ -58,7 +60,7 @@ class BostonRubyists < Sinatra::Base
     @tweets = DB[:tweets].order(:created_at.desc).limit(200).map {|t| prep_tweet t}
     @blogs = DB[:blogs].all
     @blog_posts = DB[:blog_posts].order(:date.desc).limit(90).map {|p| prep p}
-    erb :index 
+    erb :index
   }
 
   get('/updates') {

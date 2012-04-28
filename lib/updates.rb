@@ -6,7 +6,7 @@ require 'yaml'
 require 'curb'
 
 CONFIG = YAML::load_file("config.yml")
-DB = Sequel.connect CONFIG['database']
+DB = Sequel.connect ENV['DATABASE_URL'] || CONFIG['database']
 
 def update_atom atom_xml
   d = Nokogiri::XML.parse atom_xml
@@ -41,10 +41,10 @@ def update_list hackers
       c = Curl::Easy.new(url) { |curl|
         curl.on_body {|data| res[:body] << data; data.size}
         curl.on_header {|data| res[:headers] << data; data.size}
-        curl.on_success {|easy| 
+        curl.on_success {|easy|
           new = update_atom res[:body]
-          if new.size > 0 
-            puts "#{programmer} -> #{new.size} new items" 
+          if new.size > 0
+            puts "#{programmer} -> #{new.size} new items"
             activity << ({programmer:programmer, items:new.size})
           else
             $stdout.print "."
@@ -57,6 +57,6 @@ def update_list hackers
   }
   # puts activity.to_yaml
 end
-  
+
 hackers = DB[:hackers].all.map {|x| x[:name]}
 update_list hackers
