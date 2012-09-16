@@ -7,6 +7,14 @@ require 'feed_yamlizer'
 require 'yaml'
 require 'sequel'
 
+if ENV["RUNNING_ON"] == "heroku"
+  # feed_yamlizer calls the tidy binary directly; heroku needs special support.
+  ENV["PATH"] = "/app/lib/tidy/bin/:#{ENV['PATH']}"
+  ENV["LD_LIBRARY_PATH"] ||="/usr/lib"
+  ENV["LD_LIBRARY_PATH"] +=":/app/lib/tidy/lib"
+end
+
+
 CONFIG = YAML::load_file("config.yml")
 DB = Sequel.connect ENV['DATABASE_URL'] || CONFIG['database']
 opml_url = CONFIG['opml']

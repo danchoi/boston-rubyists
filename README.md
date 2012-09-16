@@ -84,6 +84,14 @@ right name for your database.
     createdb bostonruby
     psql bostonruby < schema.psql
 
+## Running on Heroku
+
+Running this app on Heroku requires a config var used by blogs.rb to reference a bundled tidy binary made necessary by feed_yamlizer. 
+
+Using the [heroku toolbelt](https://toolbelt.heroku.com/) ...
+
+    heroku config:set RUNNING_ON=heroku
+
 ## Populating the database
 
 There are four rake tasks you should run to populate the data:
