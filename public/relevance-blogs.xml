@@ -4,8 +4,6 @@
         <title>relevance subscriptions in Google Reader</title>
     </head>
     <body>
-          <outline text="alan dipert" title="alan dipert" type="rss"
-              xmlUrl="http://alan.dipert.org/rss" htmlUrl="http://alan.dipert.org/"/>
           <outline text="ben vandgrift: life, love, ruby"
               title="ben vandgrift: life, love, ruby" type="rss"
               xmlUrl="http://ben.vandgrift.com/atom.xml" htmlUrl="http://ben.vandgrift.com/"/>
@@ -18,9 +16,6 @@
               xmlUrl="http://craigandera.blogspot.com/feeds/posts/default" htmlUrl="http://craigandera.blogspot.com/"/>
           <outline text="crn.io" title="crn.io" type="rss"
               xmlUrl="http://crn.io/feed/" htmlUrl="http://crn.io"/>
-          <outline text="Data Sorcery with Clojure"
-              title="Data Sorcery with Clojure" type="rss"
-              xmlUrl="http://data-sorcery.org/feed/" htmlUrl="http://data-sorcery.org"/>
           <outline text="Digital Digressions by Stuart Sierra"
               title="Digital Digressions by Stuart Sierra" type="rss"
               xmlUrl="http://stuartsierra.com/feed" htmlUrl="http://stuartsierra.com"/>
@@ -29,9 +24,6 @@
           <outline text="Jason Rudolph" title="Jason Rudolph"
               type="rss"
               xmlUrl="http://feeds.feedburner.com/jasonrudolph" htmlUrl="http://jasonrudolph.com/"/>
-          <outline text="Panasonic Youth" title="Panasonic Youth"
-              type="rss"
-              xmlUrl="http://feeds.feedburner.com/PanasonicYouth" htmlUrl="http://robsanheim.com/"/>
           <outline text="Relevance" title="Relevance" type="rss"
               xmlUrl="http://blogs.relevancellc.com/xml/rss/feed.xml" htmlUrl="http://thinkrelevance.com/blog/"/>
           <outline text="Send More Paramedics"
@@ -43,5 +35,7 @@
           <outline text="Wide Awake Developers"
               title="Wide Awake Developers" type="rss"
               xmlUrl="http://www.michaelnygard.com/blog/atom.xml" htmlUrl="http://www.michaelnygard.com/blog/"/>
+          <outline text="Daemian Mack" title="Daemian Mack" type="rss"
+              xmlUrl="http://daemianmack.com/?feed=rss2" htmlUrl="http://daemianmack.com"/>
     </body>
 </opml>
