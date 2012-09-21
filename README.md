@@ -8,8 +8,13 @@ This fork does the following differently:
 * Twitter and github users can be configured in yaml
 * Date fixes
 * Styling improved by @michaelparenteau
+* Blogs work on heroku thanks to @daemianmack
 
 I'll try to merge as much of this upstream when I get a chance.
+
+## TODO
+
+* Deleting users in config.yml doesn't delete them from the db
 
 # OLD README BELOW
 
@@ -86,7 +91,7 @@ right name for your database.
 
 ## Running on Heroku
 
-Running this app on Heroku requires a config var used by blogs.rb to reference a bundled tidy binary made necessary by feed_yamlizer. 
+Running this app on Heroku requires a config var used by blogs.rb to reference a bundled tidy binary made necessary by feed_yamlizer.
 
 Using the [heroku toolbelt](https://toolbelt.heroku.com/) ...
 
