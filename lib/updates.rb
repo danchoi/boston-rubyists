@@ -7,11 +7,13 @@ require 'curb'
 
 CONFIG = YAML::load_file("config.yml")
 DB = Sequel.connect ENV['DATABASE_URL'] || CONFIG['database']
+DISCARD_OLDER_THAN = Time.now - (60 * 60 * 24 * CONFIG['max_days_of_updates'])
 
 def update_atom atom_xml
   d = Nokogiri::XML.parse atom_xml
   d.search('entry').map {|e|
     date = Time.parse(e.at('published').inner_text)
+    next if date < DISCARD_OLDER_THAN
 
     item = {
       update_id: e.at('id').inner_text,
