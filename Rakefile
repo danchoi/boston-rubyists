@@ -25,4 +25,9 @@ task :tweets do
   require 'tweets'
   puts "Finished :tweets at #{Time.now}"
 end
+task :expire_data do
+  puts "Started :expire_data at #{Time.now}"
+  require 'expire_data'
+  puts "Finished :expire_data at #{Time.now}"
+end
 
