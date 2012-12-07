@@ -19,16 +19,11 @@
           <outline text="Digital Digressions by Stuart Sierra"
               title="Digital Digressions by Stuart Sierra" type="rss"
               xmlUrl="http://stuartsierra.com/feed" htmlUrl="http://stuartsierra.com"/>
-          <outline text="HickoryTech" title="HickoryTech" type="rss"
-              xmlUrl="http://tech.hickorywind.org/xml/rss" htmlUrl="http://tech.hickorywind.org/articles.rss"/>
           <outline text="Jason Rudolph" title="Jason Rudolph"
               type="rss"
               xmlUrl="http://feeds.feedburner.com/jasonrudolph" htmlUrl="http://jasonrudolph.com/"/>
           <outline text="Relevance" title="Relevance" type="rss"
               xmlUrl="http://blogs.relevancellc.com/xml/rss/feed.xml" htmlUrl="http://thinkrelevance.com/blog/"/>
-          <outline text="Send More Paramedics"
-              title="Send More Paramedics" type="rss"
-              xmlUrl="http://blog.fogus.me/feed/" htmlUrl="http://blog.fogus.me"/>
           <outline text="Technology As If People Mattered"
               title="Technology As If People Mattered" type="rss"
               xmlUrl="http://www.jroller.com/rolsen/feed/entries/atom" htmlUrl="http://www.jroller.com/rolsen/"/>
