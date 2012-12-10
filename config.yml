@@ -1,6 +1,7 @@
 database: postgres:///bostonruby
 page_title: relevancers
 poll_interval: 10
+max_days_of_updates: 15
 org: 
   name: relevance.com
   href: http://thinkrelevance.com
