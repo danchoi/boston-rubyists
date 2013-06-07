@@ -6,7 +6,7 @@
     <body>
           <outline text="ben vandgrift: life, love, ruby"
               title="ben vandgrift: life, love, ruby" type="rss"
-              xmlUrl="http://ben.vandgrift.com/atom.xml" htmlUrl="http://ben.vandgrift.com/"/>
+              xmlUrl="http://ben.vandgrift.com/feed.xml" htmlUrl="http://ben.vandgrift.com/"/>
           <outline text="Clojure/core Blog" title="Clojure/core Blog"
               type="rss"
               xmlUrl="http://feeds.feedburner.com/Clojure/coreBlog" htmlUrl="http://clojure.com/blog/"/>
