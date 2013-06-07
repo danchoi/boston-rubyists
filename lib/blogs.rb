@@ -33,7 +33,15 @@ feeds.each {|f|
 
   feedyml = `curl -Ls '#{f}' | feed2yaml`
   x = YAML::load feedyml
-  x[:items].each { |i|
+
+  begin
+    items = x[:items]
+  rescue
+    puts "*** Skipping over what is probably a bad feed: #{f}"
+    next
+  end
+
+  items.each { |i|
     html = i[:content][:html]
     content = if html
       n = Nokogiri::HTML(html).at('p')
