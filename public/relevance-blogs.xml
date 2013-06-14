@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+    <head>
+        <title>relevance subscriptions in Google Reader</title>
+    </head>
+    <body>
+          <outline text="ben vandgrift: life, love, ruby"
+              title="ben vandgrift: life, love, ruby" type="rss"
+              xmlUrl="http://ben.vandgrift.com/feed.xml" htmlUrl="http://ben.vandgrift.com/"/>
+          <outline text="Clojure/core Blog" title="Clojure/core Blog"
+              type="rss"
+              xmlUrl="http://feeds.feedburner.com/Clojure/coreBlog" htmlUrl="http://clojure.com/blog/"/>
+          <outline text="CraigBlog" title="CraigBlog" type="rss"
+              xmlUrl="http://craigandera.blogspot.com/feeds/posts/default" htmlUrl="http://craigandera.blogspot.com/"/>
+          <outline text="crn.io" title="crn.io" type="rss"
+              xmlUrl="http://crn.io/feed/" htmlUrl="http://crn.io"/>
+          <outline text="Digital Digressions by Stuart Sierra"
+              title="Digital Digressions by Stuart Sierra" type="rss"
+              xmlUrl="http://stuartsierra.com/feed" htmlUrl="http://stuartsierra.com"/>
+          <outline text="Relevance" title="Relevance" type="rss"
+              xmlUrl="http://blogs.relevancellc.com/xml/rss/feed.xml" htmlUrl="http://thinkrelevance.com/blog/"/>
+          <outline text="Technology As If People Mattered"
+              title="Technology As If People Mattered" type="rss"
+              xmlUrl="http://www.jroller.com/rolsen/feed/entries/atom" htmlUrl="http://www.jroller.com/rolsen/"/>
+          <outline text="Wide Awake Developers"
+              title="Wide Awake Developers" type="rss"
+              xmlUrl="http://www.michaelnygard.com/blog/atom.xml" htmlUrl="http://www.michaelnygard.com/blog/"/>
+          <outline text="Daemian Mack" title="Daemian Mack" type="rss"
+              xmlUrl="http://daemianmack.com/?feed=rss2" htmlUrl="http://daemianmack.com"/>
+    </body>
+</opml>

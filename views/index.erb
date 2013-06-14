@@ -19,23 +19,26 @@
         <div id="weather"></div>
       <% end %>
 
-      
-      <p style="clear:left">
+
+      <p class="description" style="clear:left">
         This site is powered by <a href="http://www.sinatrarb.com/">Sinatra</a>
-        and 
+        and
         <a href="http://documentcloud.github.com/backbone/">Backbone.js</a>.
         It should update automatically in-place every few minutes.
-        Get the <a href="https://github.com/danchoi/boston-rubyists">source code</a> on GitHub.
+        Get the <a href="https://github.com/cldwalker/relevancers">source code</a> on GitHub.
       </p>
 
       <div class="row contentBox">
-        <div class="span4">
+        <div class="span3">
+          <h3>On Github</h3>
           <div id="updates"> </div>
         </div>
-        <div class="span4">
+        <div class="span3">
+          <h3>On Twitter</h3>
           <div id="tweets"> </div>
         </div>
-        <div class="span4">
+        <div class="span5">
+          <h3>Blogposts</h3>
           <div id="blogposts"> </div>
         </div>
       </div>
@@ -46,9 +49,9 @@
           <% @hackers.each do |h| %>
 
             <div class="person">
-              <a 
+              <a
                 title="<%= h[:followers] %> followers | <%= h[:repos] %> repos"
-                href="https://github.com/<%=h[:name]%>"><%=h[:name]%></a>&nbsp;<span class="location"><%= h[:location].gsub(/[\s,].*$/, '') %></span>
+                href="https://github.com/<%=h[:name]%>"><%=h[:name]%></a>&nbsp;<span class="location"><%= h[:location].to_s.gsub(/[\s,].*$/, '') %></span>
             </div>
 
           <% end %>
@@ -56,7 +59,7 @@
         </div>
       </div>
     </div>
-  
+
     <script type="text/javascript" src="/underscore-min.js"></script>
     <script type="text/javascript" src="/jquery-1.7.1.js"></script>
     <script type="text/javascript" src="/backbone-min.js"></script>
@@ -122,4 +125,3 @@
   </body>
 
 </html>
-

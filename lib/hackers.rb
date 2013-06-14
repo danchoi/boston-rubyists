@@ -9,7 +9,7 @@ require 'sequel'
 require 'yaml'
 
 CONFIG = YAML::load_file("config.yml")
-DB = Sequel.connect CONFIG['database']
+DB = Sequel.connect ENV['DATABASE_URL'] || CONFIG['database']
 
 def run loc
   url =  "https://github.com/search?type=Users&language=#{CONFIG['language']}&q=location:#{loc.gsub("+", "%2B")}"
@@ -30,12 +30,12 @@ def parse html
     followers = details.inner_text[/(\d+) followers/, 1].strip
     repos = details.inner_text[/(\d+) repos/, 1].strip
     location = details.inner_text[/located in (.+)$/, 1].strip
-    params = {name:name, 
-        followers:followers.to_i, 
-        repos:repos.to_i, 
+    params = {name:name,
+        followers:followers.to_i,
+        repos:repos.to_i,
         location:location,
         updated:Time.now}
-    
+
     if DB[:hackers].first name:name
       puts "Updating #{name}"
       DB[:hackers].filter(name:name).update(params)
@@ -49,10 +49,21 @@ def parse html
   end
 end
 
-locations = CONFIG['locations']
-locations.each {|loc|
-  puts '-' * 20
-  puts "Searching #{loc}"
-  run loc
-}
+# locations = CONFIG['locations']
+# locations.each {|loc|
+#   puts '-' * 20
+#   puts "Searching #{loc}"
+#   run loc
+# }
 
+def find_or_create(name)
+  if !DB[:hackers].first(name: name)
+    puts "Inserting #{name}"
+    DB[:hackers].insert(name: name)
+  # else
+  #   DB[:hackers].filter(name: name).update(location: 'NC')
+  end
+end
+
+hackers = CONFIG['hackers']
+hackers.each {|r| find_or_create(r) }

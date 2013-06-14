@@ -1,7 +1,27 @@
+## Description
+
+This is a fork of [boston-rubyists](https://github.com/danchoi/boston-rubyists) for
+[relevancers](http://relevancers.herokuapp.com/).
+This fork does the following differently:
+
+* Runs on heroku
+* Twitter and github users can be configured in yaml
+* Date fixes
+* Styling improved by @michaelparenteau
+* Blogs work on heroku thanks to @daemianmack
+
+I'll try to merge as much of this upstream when I get a chance.
+
+## TODO
+
+* Deleting users in config.yml doesn't delete them from the db
+
+# OLD README BELOW
+
 # boston-rubyists
 
-This project lets you easily set up a super-[planet][planet] that aggregates the GitHub feeds, 
-tweets, and blogs of your local hacker community. 
+This project lets you easily set up a super-[planet][planet] that aggregates the GitHub feeds,
+tweets, and blogs of your local hacker community.
 
 It was created for [BostonRB][bostonrb] (Boston Ruby Group), but it's
 configurable, so you can deploy a version for your own hacker community.
@@ -40,21 +60,21 @@ copy the pattern in `config.yml.example`:
 
     database: postgres:///bostonruby
     page_title: boston rubyists
-    poll_interval: 8 
-    org: 
+    poll_interval: 8
+    org:
       name: bostonrb.org
       href: http://bostonrb.org
     opml: http://www.blogbridge.com/rl/291/Boston+Ruby.opml
     twitters: https://github.com/bostonrb/bostonrb/wiki/All-Rubyists
     language: ruby
-    locations: 
-    - cambridge+ma 
-    - boston 
-    - somerville+ma 
-    - salem+ma 
-    - providence+ri 
-    - salem+ma 
-    - portsmouth+nh 
+    locations:
+    - cambridge+ma
+    - boston
+    - somerville+ma
+    - salem+ma
+    - providence+ri
+    - salem+ma
+    - portsmouth+nh
     - portland+me
 
 * `opml` is an OPML file that contains a list of all the blogs you want to aggregate.
@@ -63,11 +83,19 @@ copy the pattern in `config.yml.example`:
 * `poll_interval` is the interval in seconds at which the Backbone.js client code should poll the Sinatra app for updates. Sorry, no websockets yet.
 * `twitters` is a URL of a page that contains a list of Twitter user URLs
 
-Set up the database you configured in config.yml like this, substituting the 
+Set up the database you configured in config.yml like this, substituting the
 right name for your database.
 
     createdb bostonruby
     psql bostonruby < schema.psql
+
+## Running on Heroku
+
+Running this app on Heroku requires a config var used by blogs.rb to reference a bundled tidy binary made necessary by feed_yamlizer.
+
+Using the [heroku toolbelt](https://toolbelt.heroku.com/) ...
+
+    heroku config:set RUNNING_ON=heroku
 
 ## Populating the database
 
@@ -80,7 +108,7 @@ There are four rake tasks you should run to populate the data:
 
 Run `rake hackers` first to populate the hackers table in the database.
 
-The other three tasks should be run periodically to keep the content up to date. Use cron or 
+The other three tasks should be run periodically to keep the content up to date. Use cron or
 some other tool.
 
 ## Running the webapp

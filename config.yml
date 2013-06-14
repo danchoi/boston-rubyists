@@ -1,0 +1,77 @@
+database: postgres:///bostonruby
+page_title: relevancers
+poll_interval: 10
+max_days_of_updates: 15
+org: 
+  name: relevance.com
+  href: http://thinkrelevance.com
+opml: http://relevancers.herokuapp.com/relevance-blogs.xml
+twitters: https://github.com/bostonrb/bostonrb/wiki/All-Rubyists
+language: ruby
+locations: 
+- cambridge+ma 
+- boston 
+- somerville+ma 
+- salem+ma 
+- providence+ri 
+- salem+ma 
+- portsmouth+nh 
+- portland+me
+hackers:
+- aredington
+- bobby
+- brentonashworth
+- bvandgrift
+- candera
+- cldwalker
+- daemianmack
+- ErgoBibamus
+- halgari
+- itsthatguy
+- jgehtland
+- jgkite
+- ldenman
+- levand
+- lynngrogan
+- MaggieL
+- michaelparenteau
+- mtnygard
+- NaokoChamberlain
+- redinger
+- relevance
+- rkneufeld
+- russolsen
+- stuarthalloway
+- stuartsierra
+- sumbach
+- timewald
+- turbomarc
+- yokolet
+tweeters:
+- bobbycalderwood
+- brentonashworth
+- bvandgrift
+- cldwalker
+- craigandera
+- DaemianMack
+- holy_chao
+- itg
+- JAlexWarr
+- jgehtland
+- jgkite
+- L4k3
+- levanderhart
+- MaggieLitton
+- mtnygard
+- Naoko_Cha
+- parenteau
+- redinger
+- rkneufeld
+- russolsen
+- samumbach
+- stuarthalloway
+- stuartsierra
+- timbaldridge
+- thinkrelevance
+- turbomarc
+- yokolet
